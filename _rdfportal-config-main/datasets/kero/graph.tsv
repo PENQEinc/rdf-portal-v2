@@ -1,0 +1,5 @@
+pattern	graph
+latest/graph-1/**/*.ttl.gz	http://rdfportal.org/dataset/kero/Cancer_Cell_Line
+latest/graph-1/**/*.ntriple.gz	http://rdfportal.org/dataset/kero/Cancer_Cell_Line
+latest/graph-1/**/*.ttl	http://rdfportal.org/dataset/kero/Cancer_Cell_Line
+latest/ontology-1/kero.ttl	http://kero.hgc.jp/ontology/kero.owl

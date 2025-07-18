@@ -1,0 +1,3 @@
+pattern	graph
+latest/rdf/dataset/*.ttl	http://jpost.org/graph/database
+latest/ontology/jpost.ttl	http://rdf.jpostdb.org/ontology/jpost.owl

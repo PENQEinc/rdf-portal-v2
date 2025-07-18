@@ -1,0 +1,95 @@
+---
+bioportal:
+- bioportal
+covid:
+- uniprot-covid
+- kg-covid-19
+- pheknowlator
+- ontology
+ddbj:
+- ddbj
+- ontology
+ebi:
+- biosample
+- biomodels
+- chembl
+- expressionatlas
+- chebi
+- reactome
+- ensembl_grch37
+- ensembl_grch38
+- gwas-catalog
+- ensembl-glossary
+- ensembl_ontology
+- ensembl
+- ontology
+kero:
+- kero
+- ontology
+med2rdf:
+- dbnsfp
+- dbscsnv
+- ontology
+ncbi:
+- pubmed
+- pubtator
+- clinvar
+- medgen
+- nlm-catalog
+- mesh
+- ncbigene
+- ontology
+pdb:
+- pdb
+- bmrb
+- ontology
+primary:
+- disgenet
+- ggdonto
+- nadd
+- naro_genebank
+- opentggates
+- paconto
+- pgdbj
+- quanto
+- refex
+- ssbd
+- famsbase
+- ligandbox
+- glycoepitope
+- glytoucan
+- hgnc
+- homologene
+- knapsack
+- polyinfo
+- icgc
+- mbgd
+- jcm
+- dbcatalog
+- nando
+- nikkaji
+- nbrc
+- pubcasefinder
+- wurcs
+- jpostdb
+- gtdb
+- massbank
+- glycosmos
+- togoid
+- ontology
+proteinatlas:
+- proteinatlas
+- ontology
+pubchem:
+- pubchem
+- ontology
+sib:
+- bgee
+- nextprot
+- rhea
+- uniprot
+- oma
+- ontology
+wikidata:
+- wikidata
+- ontology

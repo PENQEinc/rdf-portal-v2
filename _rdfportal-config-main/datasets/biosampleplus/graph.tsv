@@ -1,0 +1,5 @@
+pattern	graph
+latest/accessions.*.ttl	http://rdfportal.org/dataset/biosampleplus/accessions
+latest/biosample.*.ttl	http://rdfportal.org/dataset/biosampleplus/biosample
+latest/bsp.json.*.ttl	http://rdfportal.org/dataset/biosampleplus/biosampleplus
+latest/exp.*.ttl	http://rdfportal.org/dataset/biosampleplus/experiment

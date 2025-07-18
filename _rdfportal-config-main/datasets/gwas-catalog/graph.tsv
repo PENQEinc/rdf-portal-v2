@@ -1,0 +1,2 @@
+pattern	graph
+latest/*.ttl.gz	http://rdf.ebi.ac.uk/dataset/gwas_catalog

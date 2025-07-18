@@ -1,0 +1,3 @@
+pattern	graph
+latest/rdf/graph-1/**/*.ttl.gz	http://purl.jp/bio/5/ligandbox/
+latest/rdf/ontology-1/ligandbox.owl	http://rdfportal.org/rdf/download/liganbox/2021-05-25/ontology-1/ligandbox.owl

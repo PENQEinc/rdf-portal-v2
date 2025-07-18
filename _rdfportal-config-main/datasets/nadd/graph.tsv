@@ -1,0 +1,2 @@
+pattern	graph
+latest/rdf/graph-1/**/*.ttl.gz	http://purl.jp/bio/18/nadd/

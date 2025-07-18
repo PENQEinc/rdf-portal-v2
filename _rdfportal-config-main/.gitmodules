@@ -1,0 +1,3 @@
+[submodule "docker/src/sparql-proxy"]
+	path = docker/src/sparql-proxy
+	url = https://github.com/dbcls/sparql-proxy.git

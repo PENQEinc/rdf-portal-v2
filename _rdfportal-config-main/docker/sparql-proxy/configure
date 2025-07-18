@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+cat <<'EOF' >Makefile
+COMPOSE = docker compose
+EOF
+
+all=()
+for f in */docker-compose.yml; do
+  [[ $f =~ ^common ]] && continue
+  all+=("$(dirname "$f")")
+done
+
+cat <<EOF >>Makefile
+
+.PHONY: ${all[@]}
+
+all: ${all[@]}
+
+up: ${all[@]/#/up-}
+
+down: ${all[@]/#/down-}
+
+down-v: ${all[@]/#/down-volumes-}
+
+ps: ${all[@]/#/ps-}
+
+recreate: ${all[@]/#/recreate-}
+
+rebuild: ${all[@]/#/rebuild-}
+EOF
+
+for f in */docker-compose.yml; do
+  [[ $f =~ ^common ]] && continue
+  cat <<EOF >>Makefile
+
+$(dirname "$f"):
+	\$(COMPOSE) -f $f build
+
+up-$(dirname "$f"):
+	\$(COMPOSE) -f $f up --detach
+
+down-$(dirname "$f"):
+	\$(COMPOSE) -f $f down
+
+down-v-$(dirname "$f"):
+	\$(COMPOSE) -f $f down --volumes
+
+ps-$(dirname "$f"):
+	\$(COMPOSE) -f $f ps
+
+recreate-$(dirname "$f"):
+	\$(COMPOSE) -f $f down
+	\$(COMPOSE) -f $f up --detach
+
+rebuild-$(dirname "$f"):
+	\$(COMPOSE) -f $f down --rmi all --volumes
+	\$(COMPOSE) -f $f up --detach --build
+EOF
+done

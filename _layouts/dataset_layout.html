@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<h1>{{ page.title }}</h1>
+
+<p><strong>ID:</strong> {{ page.id }}</p>
+<p><strong>説明:</strong> {{ page.description }}</p>
+<p><strong>発行日:</strong> {{ page.issued }}</p>
+<p><strong>更新日:</strong> {{ page.modified }}</p>
+{% if page.website %}
+<p><strong>ホームページ:</strong> <a href="{{ page.website }}">{{ page.website }}</a></p>
+{% endif %}
+{% if page.endpoint %}
+<p><strong>エンドポイント:</strong></p>
+<ul>
+  {% for endpoint in page.endpoint %}
+  <li><a href="{{ endpoint }}">{{ endpoint }}</a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+{% if page.creators %}
+<p><strong>作成者:</strong></p>
+<ul>
+  {% for creator in page.creators %}
+  <li>{{ creator.name }} ({{ creator.affiliation }})</li>
+  {% endfor %}
+</ul>
+{% endif %}

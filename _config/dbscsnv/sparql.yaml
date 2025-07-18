@@ -1,0 +1,8 @@
+sparql:
+  description: SPARQL description.
+  variables:
+    - DbscSNV
+    - variation_label
+    - refseq_gene
+    - random_forest_score
+    - ada_boost_score

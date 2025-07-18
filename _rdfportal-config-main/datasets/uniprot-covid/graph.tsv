@@ -1,0 +1,2 @@
+pattern	graph
+latest/**/*.rdf	https://covid-19-sparql.expasy.org/uniprot

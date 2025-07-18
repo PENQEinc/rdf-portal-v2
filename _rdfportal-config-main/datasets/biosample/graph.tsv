@@ -1,0 +1,2 @@
+pattern	graph
+latest/*.ttl	http://rdf.ebi.ac.uk/dataset/biosamples

@@ -1,0 +1,3 @@
+pattern	graph
+latest/rdf/graph-1/*.ttl.gz	http://rdf.glycoinfo.org/glytoucan
+latest/rdf/ontology-1/*.ttl.gz	http://www.glytoucan.org/glyco/owl/glytoucan

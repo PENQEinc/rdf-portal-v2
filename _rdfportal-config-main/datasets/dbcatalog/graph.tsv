@@ -1,0 +1,3 @@
+pattern	graph
+latest/rdf/graph-1/*.ttl.gz	http://rdfportal.org/dataset/dbcatalog/main
+latest/rdf/graph-2/*.ttl.gz	http://rdfportal.org/dataset/dbcatalog/tag

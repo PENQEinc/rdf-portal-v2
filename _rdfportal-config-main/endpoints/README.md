@@ -1,0 +1,1 @@
+# rdfportal-config / endpoints

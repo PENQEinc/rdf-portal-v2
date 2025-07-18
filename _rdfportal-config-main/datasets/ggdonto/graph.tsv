@@ -1,0 +1,3 @@
+pattern	graph
+latest/rdf/graph-1/*.ttl	http://jcggdb.jp/rdf/diseases/ggdonto
+latest/rdf/ontology-1/*.ttl	http://jcggdb.jp/rdf/diseases/ggdonto-schema.rdf

@@ -1,0 +1,16 @@
+services:
+  virtuoso:
+    build: ../common
+    image: virtuoso:latest
+    restart: always
+    env_file: ../common/common.env
+    ports:
+      - "${HOST_PORT:-8890}:8890"
+    volumes:
+      - ${DATA_DIR:?}/virtuoso.db:/opt/virtuoso-opensource/database/virtuoso.db
+      - /etc/localtime:/etc/localtime:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'

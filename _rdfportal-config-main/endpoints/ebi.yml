@@ -1,0 +1,61 @@
+---
+name: ebi
+
+directory:
+  prefix: /data/rdfportal
+
+database:
+  adapter: virtuoso
+  host: localhost
+  password: <%= ENV.fetch('RDFPORTAL_VIRTUOSO_PASSWORD') %>
+  options:
+    bin: /data/rdfportal/virtuoso/load/bin
+    ini_template: /data/rdfportal/virtuoso/conf/virtuoso-load.ini
+    cors: true
+    federated_query: true
+    text_index: false
+  environment:
+    load:
+      Parameters:
+        ServerPort: 11003
+        NumberOfBuffers: 57000000
+        MaxDirtyBuffers: 42750000
+        MaxSortedTopRows: 200000
+      HTTPServer:
+        ServerPort: 12003
+      Client:
+        SQL_PREFETCH_ROWS: 10000
+        SQL_PREFETCH_BYTES: 1600000
+      SPARQL:
+        ResultSetMaxRows: 1000000
+        MaxQueryCostEstimationTime: 0
+        MaxQueryExecutionTime: 600
+
+load:
+  snapshots: true
+  parallel: 5
+  datasets:
+    - name: biosample
+    - name: biomodels
+    - name: chembl
+    - name: expressionatlas
+    - name: chebi
+    - name: reactome
+    - name: ensembl_grch37
+    - name: ensembl_grch38
+    - name: gwas-catalog
+    - name: ensembl-glossary
+    - name: ensembl_ontology
+    - name: ensembl
+    - name: ontology
+
+publish:
+  steps:
+    - action: script
+      file: /data/rdfportal/rdfportal-config/scripts/publish.sh
+      environments:
+        RDFPORTAL_PUBLISH_REMOTE_DIR: /data/rdfportal
+        RDFPORTAL_PUBLISH_VIRTUOSO_DIR: /data/rdfportal/virtuoso
+        RDFPORTAL_PUBLISH_PROXY_DIR: /data/rdfportal/proxy
+        RDFPORTAL_PUBLISH_VIRTUOSO_CONTAINER: virtuoso-ebi
+        RDFPORTAL_PUBLISH_PROXY_CONTAINER: proxy-ebi

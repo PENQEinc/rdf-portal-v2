@@ -1,0 +1,10 @@
+sparql:
+  description: SPARQL description.
+  variables:
+    - DbNSFP
+    - dbsnp
+    - variation_label
+    - gene_label
+    - transcript_id
+    - alpha_missense_rankscore
+    - alpha_missense_pred

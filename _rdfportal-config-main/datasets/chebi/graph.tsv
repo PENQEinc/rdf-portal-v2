@@ -1,0 +1,2 @@
+pattern	graph
+latest/*.owl.gz	http://rdf.ebi.ac.uk/dataset/chebi

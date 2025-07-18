@@ -1,0 +1,2 @@
+pattern	graph
+latest/**/*.nt.gz	http://kg-hub.berkeleybop.io/kg-covid-19

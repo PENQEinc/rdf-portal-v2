@@ -1,0 +1,3 @@
+pattern	graph
+latest/*.ttl	http://rdf.ebi.ac.uk/dataset/expressionatlas
+latest/*.owl	http://rdf.ebi.ac.uk/dataset/expressionatlas

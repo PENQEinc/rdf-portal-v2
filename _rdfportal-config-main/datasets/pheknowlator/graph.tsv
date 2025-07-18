@@ -1,0 +1,3 @@
+pattern	graph
+latest/**/*.owl	https://github.com/callahantiff/PheKnowLator/Full-OWL-KG
+latest/**/*.nt	https://github.com/callahantiff/PheKnowLator/OWL-NETS-KG

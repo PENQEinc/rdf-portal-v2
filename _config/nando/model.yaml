@@ -1,0 +1,31 @@
+- Nando nando:1200799:
+    - a: owl:Class
+    - rdfs:label:
+        - label_ja: '"グルコーストランスポーター1欠損症"@ja'
+    - rdfs:label?:
+        - label_en: '"Glucose transporter 1 deficiency"@en'
+    - rdfs:label?:
+        - label_hira: '"ぐるこーすとらんすぽーたー1けっそんしょう"@ja-Hira'
+    - dct:identifier:
+        - nando_id: "NANDO:1200799"
+    - nando:hasNotificationNumber?:
+        - notification_number: "248"
+    - nando:memberOf?:
+        - memberof: nando:3000003
+    - dct:source?: 
+        - source: <https://www.mhlw.go.jp/content/10905000/001210481.pdf>
+    - rdfs:seeAlso*:
+        - see_also: <https://www.nanbyou.or.jp/entry/4454>
+    - skos:closeMatch*: 
+        - close_match: obo:MONDO_0011724
+    - skos:exactMatch?:
+        - exact_match: obo:MONDO_0000188
+    - skos:prefLabel?:
+        - pref_label: '"GLUT1欠損症"@ja'
+    - skos:altLabel*:
+        - alt_label_ja: '"GLUT-1 deficiency"@en'
+    - dct:description?:
+        - description: '"グルコーストランスポーター１欠損症症候群（glucose transporter type 1 deficiency syndrome：GLUT-1 DS）は、脳のエネルギー代謝基質であるグルコースが中枢神経系に取り込まれないことにより生じる代謝性脳症で、1991年にDe Vivoらにより初めて報告された。血糖は正常値であるが髄液糖が低値となることより中枢神経系内の低血糖状態を生じ、様々な中枢神経系機能不全を起こす。中でも難治性てんかんや発達遅滞、痙性麻痺、運動失調等の原因となる。GLUT-1DSはケトン食による治療が有効な疾患であり、早期発見・治療により予後を改善する可能性がある。"@ja'
+    - rdfs:subClassOf*:
+        - subclassof: nando:1100002
+

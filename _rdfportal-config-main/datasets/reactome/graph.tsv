@@ -1,0 +1,2 @@
+pattern	graph
+latest/*.owl	http://rdf.ebi.ac.uk/dataset/reactome

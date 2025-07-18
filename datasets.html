@@ -1,0 +1,23 @@
+---
+layout: default
+title: データセット一覧
+---
+
+<h1>{{ page.title }}</h1>
+
+<ul>
+  {% for dataset in site.data.datasets %}
+  <li>
+    <h2>
+      <a href="/datasets/{{ dataset.id | slugify }}">
+        {% if dataset.title %}
+        {{ dataset.title }}
+        {% else %}
+        [{{ dataset.id }}]
+        {% endif %}
+      </a>
+    </h2>
+    <p>{{ dataset.description }}</p>
+  </li>
+  {% endfor %}
+</ul>

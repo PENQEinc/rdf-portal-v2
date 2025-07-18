@@ -1,0 +1,3 @@
+pattern	graph
+latest/rdf/graph-1/*.ttl.gz	http://pgdbj.jp/od/
+latest/rdf/ontology-1/*.ttl.gz	http://purl.jp/bio/11/orth#

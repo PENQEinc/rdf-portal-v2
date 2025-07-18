@@ -1,0 +1,2 @@
+pattern	graph
+latest/rdf/**/*.ttl	http://purl.jp/bio/103/nite/culture/

@@ -1,0 +1,5097 @@
+[
+  {
+    "id": "bgee",
+    "endpoint": [
+      "https://rdfportal.org/sib/sparql",
+      {
+        "graph": [
+          "http://bgee.org"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "https://www.bgee.org/sparql/"
+    ],
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "biosample",
+    "endpoint": "http://virtuoso:8890/sparql",
+    "title": "BioSample RDF",
+    "website": "https://ddbj.nig.ac.jp/",
+    "description": "BioSample RDF developed by DBCLS and distributed by DDBJ",
+    "tags": [],
+    "provider": "Bioinformation and DDBJ Center",
+    "creators": [
+      {
+        "name": "Tazro Ohta",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Shuya Ikeda",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Shuichi Kawashima",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Takatomo Fujisawa",
+        "affiliation": "Bioinformation and DDBJ Center"
+      }
+    ],
+    "version": "20200903-1443",
+    "issued": "2020-09-03",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "biosample": "<http://ddbj.nig.ac.jp/biosample/>",
+    "biosample_ont": "<http://ddbj.nig.ac.jp/ontologies/biosample/>",
+    "dra_ont": "<http://ddbj.nig.ac.jp/ontologies/dra/>",
+    "bioproject_ont": "<http://ddbj.nig.ac.jp/ontologies/bioproject/>",
+    "idorg_biosample": "<http://identifiers.org/biosample/>",
+    "idorg_sra": "<http://identifiers.org/insdc.sra/>",
+    "idorg_bioproject": "<http://identifiers.org/bioproject/>",
+    "schema": "<http://schema.org/>",
+    "cellosaurus": "<http://web.expasy.org/cellosaurus/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "prov": "<http://www.w3.org/ns/prov#>",
+    "original_attributes": {
+      "description": "Get original sample attributes",
+      "variables": [
+        "BioSample",
+        "sra_run",
+        "sample_attribute",
+        "name",
+        "value"
+      ]
+    },
+    "annotated_attributes": {
+      "description": "Get ontology annotated sample attributes",
+      "variables": [
+        "BioSample",
+        "sra_run",
+        "sample_attribute",
+        "name",
+        "value",
+        "ontology"
+      ]
+    },
+    "get_object_relation": {
+      "description": "Get related SRA data objects",
+      "variables": [
+        "BioSample",
+        "sra_study",
+        "sra_experiment",
+        "sra_accession",
+        "sra_sample",
+        "sra_run",
+        "bioproject"
+      ]
+    },
+    "issued": "2020-09-03",
+    "modified": null
+  },
+  {
+    "id": "bmrb",
+    "endpoint": [
+      "https://rdfportal.org/pdb/sparql",
+      {
+        "graph": [
+          "http://bmrbpub.protein.osaka-u.ac.jp/rdf/bmr",
+          "http://bmrbpub.protein.osaka-u.ac.jp/rdf/bms",
+          "http://bmrbpub.protein.osaka-u.ac.jp/schema/mmcifmr-star.owl"
+        ]
+      }
+    ],
+    "title": "BMRB/RDF",
+    "website": "https://bmrbpub.pdbj.org/",
+    "description": "BMRB/RDF is a translation of NMR-STAR data into RDF",
+    "tags": [
+      "Protein",
+      "Other biomolecule",
+      "Others",
+      "Sequence",
+      "Structure"
+    ],
+    "provider": "Institute for Protein Research, Osaka University",
+    "creators": [
+      {
+        "name": "Masashi Yokochi",
+        "affiliation": "Institute for Protein Research, Osaka University"
+      },
+      {
+        "name": "Naohiro Kobayashi",
+        "affiliation": "Institute for Protein Research, Osaka University"
+      },
+      {
+        "name": "Akira Kinjo",
+        "affiliation": "Institute for Protein Research, Osaka University"
+      },
+      {
+        "name": "Takeshi Iwata",
+        "affiliation": "Institute for Protein Research, Osaka University"
+      },
+      {
+        "name": "Haruki Nakamura",
+        "affiliation": "Institute for Protein Research, Osaka University"
+      },
+      {
+        "name": "Chojiro Kojima",
+        "affiliation": "Institute for Protein Research, Osaka University"
+      },
+      {
+        "name": "Toshimichi Fujiwara",
+        "affiliation": "Institute for Protein Research, Osaka University"
+      },
+      {
+        "name": "Eldon L. Ulrich",
+        "affiliation": "Department of Biochemistry, University of Wisconsin-Madison"
+      },
+      {
+        "name": "John L. Markley",
+        "affiliation": "Department of Biochemistry, University of Wisconsin-Madison"
+      },
+      {
+        "name": "Yannis E. Ioannidis",
+        "affiliation": "Department of Informatics & Telecommunications, University of Athens"
+      },
+      {
+        "name": "Miron Livny",
+        "affiliation": "Department of Computer Sciences, University of Wisconsin-Madison"
+      }
+    ],
+    "version": "2023-04-29",
+    "issued": "2023-04-29",
+    "license": [
+      {
+        "name": "Creative Commons Attribution 2.1 Japan (CC BY 2.1 JP)"
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by/2.1/jp/deed.en"
+      },
+      {
+        "credit": "BMRB/RDF licensed under CC Attribution 2.1 Japan."
+      }
+    ],
+    "issued": "2023-04-29",
+    "modified": null
+  },
+  {
+    "id": "chebi",
+    "endpoint": [
+      "https://rdfportal.org/ebi/sparql",
+      {
+        "graph": [
+          "http://rdf.ebi.ac.uk/dataset/chebi"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "https://togodx-dev.dbcls.jp/human/sparql"
+    ],
+    "xml": "<http://www.w3.org/XML/1998/namespace/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "obochebi_sha": "<http://purl.obolibrary.org/obo/chebi#>",
+    "obochebi": "<http://purl.obolibrary.org/obo/chebi/>",
+    "oboinowl": "<http://www.geneontology.org/formats/oboInOwl#>",
+    "ID_InChI": {
+      "description": "id_inchi",
+      "variables": [
+        "id",
+        "inchi"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "chembl",
+    "endpoint": [
+      "https://rdfportal.org/ebi/sparql",
+      {
+        "graph": [
+          "http://rdf.ebi.ac.uk/dataset/chembl"
+        ]
+      }
+    ],
+    "title": "ChEMBL RDF",
+    "website": "https://www.ebi.ac.uk/chembl/",
+    "description": "ChEMBL is a manually curated database of bioactive molecules with drug-like properties.",
+    "tags": [
+      "Drug/Chemical"
+    ],
+    "provider": "European Bioinformatics Institute",
+    "creators": [
+      {
+        "name": "European Bioinformatics Institute"
+      }
+    ],
+    "version": 32.0,
+    "issued": "2023-03-01",
+    "licenses": [
+      "Creative Commons Attribution-Share Alike 3.0 Unported License"
+    ],
+    "id": "<http://identifiers.org/>",
+    "pmid": "<http://identifiers.org/pubmed/>",
+    "taxonomy": "<http://identifiers.org/taxonomy/>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "uniprot": "<http://purl.uniprot.org/uniprot/>",
+    "qudt": "<http://qudt.org/vocab/unit#>",
+    "chembl_activity": "<http://rdf.ebi.ac.uk/resource/chembl/activity/>",
+    "chembl_binding_site": "<http://rdf.ebi.ac.uk/resource/chembl/binding_site/>",
+    "chembl_assay": "<http://rdf.ebi.ac.uk/resource/chembl/assay/>",
+    "chembl_document": "<http://rdf.ebi.ac.uk/resource/chembl/document/>",
+    "chembl_journal": "<http://rdf.ebi.ac.uk/resource/chembl/journal/>",
+    "chembl_molecule": "<http://rdf.ebi.ac.uk/resource/chembl/molecule/>",
+    "chembl_protclass": "<http://rdf.ebi.ac.uk/resource/chembl/protclass/>",
+    "chembl_source": "<http://rdf.ebi.ac.uk/resource/chembl/source/>",
+    "chembl_target": "<http://rdf.ebi.ac.uk/resource/chembl/target/>",
+    "chembl_target_cmpt": "<http://rdf.ebi.ac.uk/resource/chembl/targetcomponent/>",
+    "chembl_drug_mechanism": "<http://rdf.ebi.ac.uk/resource/chembl/drug_mechanism/>",
+    "chembl_drug_indication": "<http://rdf.ebi.ac.uk/resource/chembl/drug_indication/>",
+    "chembl_cell_line": "<http://rdf.ebi.ac.uk/resource/chembl/cell_line/>",
+    "chembl_biocomponent": "<http://rdf.ebi.ac.uk/resource/chembl/biocomponent/>",
+    "cco": "<http://rdf.ebi.ac.uk/terms/chembl#>",
+    "schema": "<http://schema.org/>",
+    "bao": "<http://www.bioassayontology.org/bao#>",
+    "oboinowl": "<http://www.geneontology.org/formats/oboInOwl#>",
+    "ops": "<http://www.openphacts.org/units/>",
+    "uo": "<http://purl.obolibrary.org/obo/>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "cheminf": "<http://semanticscience.org/resource/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "labels": {
+      "description": "List the pairs of ChEMBL compound ID and its label",
+      "variables": [
+        "molecule_chemblid",
+        "molecule_label"
+      ],
+      "options": {
+        "distinct": true
+      }
+    },
+    "approved_drugs": {
+      "description": "List compounds targeting Tyrosine-protein kinase ABL (CHEMBL1862) and approved as a drug",
+      "variables": [
+        "molecule_chemblid",
+        "molecule_label",
+        "molecule_highest_development_phase",
+        "molecule_has_mechanism",
+        "drug_mechanism_has_target"
+      ],
+      "parameters": {
+        "drug_mechanism_has_target": "chembl_target:CHEMBL1862",
+        "molecule_highest_development_phase": 4
+      }
+    },
+    "issued": "2023-03-01",
+    "modified": null
+  },
+  {
+    "id": "chip-atlas",
+    "endpoint": [
+      "https://integbio.jp/togosite/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/togosite/chip_atlas"
+        ]
+      }
+    ],
+    "title": "ChIP-Atlas RDF",
+    "website": "https://chip-atlas.org/",
+    "description": "ChIP-Atlas RDF developed by DBCLS",
+    "tags": [],
+    "provider": "Database Center for Life Science",
+    "creators": [
+      {
+        "name": "Tazro Ohta",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Shuya Ikeda",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Hirokazu Chiba",
+        "affiliation": "Database Center for Life Science"
+      }
+    ],
+    "version": 20210827,
+    "issued": "2021-08-27",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "ca": "<http://chip-atlas.org/resources/>",
+    "cao": "<http://chip-atlas.org/ontology/>",
+    "ensg": "<http://identifiers.org/ensembl/>",
+    "srx": "<http://identifiers.org/insdc.sra/>",
+    "regulation_pairs": {
+      "description": "Get regulation pairs",
+      "variables": [
+        "PutativeRegulation",
+        "tg_tf",
+        "tg_target"
+      ]
+    },
+    "colocalization_pairs": {
+      "description": "Get colocalization pairs",
+      "variables": [
+        "Colocalization",
+        "colo_tf",
+        "colo_partner_tf"
+      ]
+    },
+    "issued": "2021-08-27",
+    "modified": null
+  },
+  {
+    "id": "civic",
+    "endpoint": [
+      "http://sparql.med2rdf.org/sparql",
+      {
+        "graph": [
+          "http://med2rdf.org/graph/civic"
+        ]
+      }
+    ],
+    "title": "RDF title",
+    "website": "https://example.com/",
+    "description": "RDF description.",
+    "tags": [],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Name 1",
+        "affiliation": "Affiliation 1"
+      },
+      {
+        "name": "Name 2",
+        "affiliation": "Affiliation 2"
+      }
+    ],
+    "version": "2020-01-01",
+    "issued": "2020-01-01",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "ncbigene": "<http://identifiers.org/ncbigene/>",
+    "pubmed": "<http://identifiers.org/pubmed/>",
+    "enst": "<http://rdf.ebi.ac.uk/resource/ensembl.transcript/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "m2r": "<http://med2rdf.org/ontology/med2rdf#>",
+    "civic": "<http://purl.jp/bio/10/civic/>",
+    "civico": "<http://purl.jp/bio/10/civic/ontology#>",
+    "gene": "<http://civic.genome.wustl.edu/links/genes/>",
+    "evidence": "<http://civic.genome.wustl.edu/links/evidence_items/>",
+    "variants": "<http://civic.genome.wustl.edu/links/variants/>",
+    "sparql": {
+      "description": "Get gene variants and evidences",
+      "variables": [
+        "ncbigene",
+        "variation",
+        "variant_origin",
+        "variation_label",
+        "pubmed"
+      ]
+    },
+    "issued": "2020-01-01",
+    "modified": null
+  },
+  {
+    "id": "clinvar",
+    "endpoint": [
+      "https://rdfportal.org/ncbi/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/clinvar"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "http://sparql.med2rdf.org/sparql"
+    ],
+    "idcv": "<http://identifiers.org/clinvar.record:>",
+    "refseq": "<http://identifiers.org/refseq/>",
+    "med2rdf": "<http://med2rdf.org/ontology/med2rdf#>",
+    "clinvar": {
+      "output_dir": "stanza",
+      "label": "ClinVar",
+      "definition": "Stanza of a clinical annotations",
+      "sparql": "sparql",
+      "parameters": {
+        "reference": {
+          "example": "<http://identifiers.org/hco/13#GRCh37>",
+          "description": "Genome reference",
+          "required": true
+        },
+        "position": {
+          "example": "32889080",
+          "description": "Genomic position",
+          "required": true
+        },
+        "db": {
+          "example": "MedGen",
+          "description": "Database name"
+        }
+      }
+    },
+    "ncbigene": "<http://ncbi.nlm.nih.gov/gene/>",
+    "medgen": "<http://ncbi.nlm.nih.gov/medgen/>",
+    "omim": "<http://omim.org/entry/>",
+    "cvo": "<http://purl.jp/bio/10/clinvar/>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "hco": "<http://identifiers.org/hco/>",
+    "hgnc": "<http://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:HGNC:>",
+    "sparql": {
+      "description": "Obrain clinical annotations from ClinVar",
+      "subject": "ClinVarAnnotaions",
+      "parameters": {
+        "reference": "<http://identifiers.org/hco/13#GRCh37>",
+        "position": "32889080",
+        "db": "MedGen"
+      },
+      "variables": [
+        "title",
+        "vcv",
+        "review_status",
+        "interpretation",
+        "last_evaluated",
+        "condition",
+        "db",
+        "id",
+        "position",
+        "reference"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "dbcatalog",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/dbcatalog/main",
+          "http://rdfportal.org/dataset/dbcatalog/tag"
+        ]
+      }
+    ],
+    "db": "<http://purl.jp/bio/03/dbcatalog/>",
+    "dcat": "<http://www.w3.org/ns/dcat#>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "pubmed": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "taxddbj": "<http://ddbj.nig.ac.jp/ontologies/taxonomy/>",
+    "lang": "<http://id.loc.gov/vocabulary/iso639-1/>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "schema": "<http://schema.org/>",
+    "tag": "<http://integbio.jp/dbcatalog/dbcatalogtag.owl#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "pav": "<http://purl.org/pav/>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "prism": "<http://prismstandard.org/namespaces/1.2/basic/>",
+    "sparql": {
+      "description": "List databases with \"ガン\" or \"癌\" in its description.",
+      "variables": [
+        {
+          "db ?title_ja ?title_en ?description": null
+        }
+      ],
+      "parameters": {
+        "description": "cancer"
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "dbnsfp",
+    "endpoint": [
+      "https://rdfportal.org/med2rdf/sparql"
+    ],
+    "title": "dbNSFP",
+    "website": "https://sites.google.com/site/jpopgen/dbNSFP",
+    "description": "dbNSFP is a database developed for functional prediction and annotation of all potential non-synonymous single-nucleotide variants (nsSNVs) in the human genome.",
+    "tags": [
+      "nsSNVs",
+      "functional prediction"
+    ],
+    "provider": "USF Genomics, College of Public Health, University of South Florida",
+    "creators": [
+      {
+        "name": "Med2RDF project",
+        "affiliation": "http://med2rdf.org/"
+      }
+    ],
+    "version": 4.9,
+    "issued": "2024-08-08",
+    "licenses": [
+      "See CITATION at https://sites.google.com/site/jpopgen/dbNSFP"
+    ],
+    "dbnsfp": "<http://purl.jp/bio/10/med2rdf/dbnsfp/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "ensg": "<http://rdf.ebi.ac.uk/resource/ensembl/>",
+    "ensp": "<http://rdf.ebi.ac.uk/resource/ensembl.protein/>",
+    "enst": "<http://rdf.ebi.ac.uk/resource/ensembl.transcript/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "m2r": "<http://med2rdf.org/ontology/med2rdf#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "DbNSFP",
+        "dbsnp",
+        "variation_label",
+        "gene_label",
+        "transcript_id",
+        "alpha_missense_rankscore",
+        "alpha_missense_pred"
+      ]
+    },
+    "issued": "2024-08-08",
+    "modified": null
+  },
+  {
+    "id": "dbscsnv",
+    "endpoint": [
+      "https://rdfportal.org/med2rdf/sparql"
+    ],
+    "title": "dbscSNV",
+    "website": "http://www.liulab.science/dbscsnv.html",
+    "description": "a comprehensive database of all potential human SNVs within splicing consensus regions and their functional annotations",
+    "tags": [
+      "SNV",
+      "splicing consensus region"
+    ],
+    "provider": "The University of Texas Health Science Center at Houston",
+    "creators": [
+      {
+        "name": "Med2RDF project",
+        "affiliation": "http://med2rdf.org/"
+      }
+    ],
+    "version": 1.1,
+    "issued": "2015-04-12",
+    "licenses": [
+      "No information is available."
+    ],
+    "dbscsnv": "<http://purl.jp/bio/10/med2rdf/dbscsnv/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "m2r": "<http://med2rdf.org/ontology/med2rdf#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "DbscSNV",
+        "variation_label",
+        "refseq_gene",
+        "random_forest_score",
+        "ada_boost_score"
+      ]
+    },
+    "issued": "2015-04-12",
+    "modified": null
+  },
+  {
+    "id": "dbsnp",
+    "endpoint": "http://sparql.med2rdf.org/sparql",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "hco": "<http://identifiers.org/hco/>",
+    "refseq": "<http://identifiers.org/refseq/>",
+    "dbsnp": {
+      "output_dir": "stanza",
+      "label": "dbSNP",
+      "definition": "Stanza of a genetic variation",
+      "sparql": "stanza",
+      "parameters": {
+        "identifier": {
+          "example": "rs1000017372",
+          "description": "dbSNP identifier",
+          "required": true
+        }
+      }
+    },
+    "dbsnpo": "<http://purl.jp/bio/10/dbsnp/>",
+    "m2r": "<http://med2rdf.org/ontology/med2rdf#>",
+    "sparql": {
+      "description": "Obrain short genetic valiations from dbSNP",
+      "subject": "dbSNPValiation",
+      "variables": [
+        "identifier",
+        "build",
+        "reference",
+        "position",
+        "reference_allele",
+        "allele"
+      ]
+    },
+    "stanza": {
+      "description": "Obrain short genetic valiations from dbSNP",
+      "subject": "dbSNPValiation",
+      "parameters": {
+        "identifier": "rs1000017372"
+      },
+      "variables": [
+        "build",
+        "reference",
+        "position",
+        "reference_allele",
+        "allele"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "dbvar",
+    "endpoint": [
+      "https://test91.biosciencedbc.jp/sparql"
+    ],
+    "title": "dbVar",
+    "website": "https://www.ncbi.nlm.nih.gov/dbvar/",
+    "description": "dbVar is NCBI's database of human genomic Structural Variation — large variants >50 bp including insertions, deletions, duplications, inversions, mobile elements, translocations, and complex variants",
+    "tags": [
+      "structural variant"
+    ],
+    "provider": "National Center for Biotechnology Information",
+    "creators": [
+      {
+        "name": "Med2RDF project",
+        "affiliation": "http://med2rdf.org/"
+      }
+    ],
+    "licenses": [
+      "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+    ],
+    "hco": "<http://identifiers.org/hco/11#>",
+    "taxon": "<http://identifiers.org/taxonomy/>",
+    "dbvar_vcall": "<http://med2rdf.org/dbvar/variant_call/>",
+    "dbvar_vcall_essv1_grch37": "<http://med2rdf.org/dbvar/variant_call/essv1/position/GRCh37/>",
+    "dbvar_vcall_essv1_grch37_chr9": "<http://med2rdf.org/dbvar/variant_call/essv1/position/GRCh37/NC_000011.9/>",
+    "dbvar_vcall_essv1_grch37_chr9_begin": "<http://med2rdf.org/dbvar/variant_call/essv1/position/GRCh37/NC_000011.9/begin#>",
+    "dbvar_vcall_essv1_grch37_chr7_end": "<http://med2rdf.org/dbvar/variant_call/essv1/position/GRCh37/NC_000011.9/end#>",
+    "dbvar": "<http://med2rdf.org/dbvar/variation/>",
+    "med2rdf": "<http://med2rdf.org/ontology/med2rdf#>",
+    "purl_dbvar": "<http://purl.jp/bio/10/dbvar/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Dbvar",
+        "location",
+        "location_begin",
+        "localtion_end"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "ddbj",
+    "endpoint": [
+      "https://rdfportal.org/ddbj/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/ddbj"
+        ]
+      }
+    ],
+    "title": "DDBJ",
+    "website": "http://www.ddbj.nig.ac.jp/index-e.html",
+    "description": "Semantic Representation of DDBJ Annotated Sequence Records.",
+    "tags": [
+      "Genome",
+      "Gene",
+      "cDNA",
+      "Tag sequence (nucleic acid)",
+      "Polymorphism",
+      "Other DNA",
+      "RNA",
+      "Sequence",
+      "Ontology/Terminology/Nomenclature",
+      "Others"
+    ],
+    "provider": "National Institute of Genetics",
+    "creators": [
+      {
+        "name": "Takatomo Fujisawa",
+        "affiliation": "National Institute of Genetics"
+      },
+      {
+        "name": "Toshiaki Katayama",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Yasukazu Nakamura",
+        "affiliation": "National Institute of Genetics"
+      }
+    ],
+    "version": 105.0,
+    "issued": "2016-07-30",
+    "licenses": [
+      "Referred to in International Nucleotide Sequence Database Collaboration Policy (http://www.insdc.org/policy.html)"
+    ],
+    "insdc_ontology": "<http://ddbj.nig.ac.jp/ontologies/nucleotide/>",
+    "insdcdiv": "<http://ddbj.nig.ac.jp/ontologies/nucleotide/Division#>",
+    "insdc": "<http://identifiers.org/insdc/>",
+    "bioproject": "<http://identifiers.org/bioproject/>",
+    "biosample": "<http://identifiers.org/biosample/>",
+    "entry": "<http://identifiers.org/insdc/AP014957.1#>",
+    "insdcref": "<http://ddbj.nig.ac.jp/ontologies/nucleotide/reference#>",
+    "pubmed": "<http://identifiers.org/pubmed/>",
+    "region": "<http://identifiers.org/insdc/AP014957.1#region:>",
+    "feature": "<http://identifiers.org/insdc/AP014957.1#feature:>",
+    "taxonomy": "<http://identifiers.org/taxonomy/>",
+    "ena": "<http://www.ebi.ac.uk/ena/data/view/>",
+    "ddbj": "<http://getentry.ddbj.nig.ac.jp/getentry/na/>",
+    "genbank": "<http://www.ncbi.nlm.nih.gov/nuccore/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "position": "<http://identifiers.org/insdc/AP014957.1#position:>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Ddbjentry"
+      ]
+    },
+    "issued": "2016-07-30",
+    "modified": null
+  },
+  {
+    "id": "dgidb",
+    "endpoint": [
+      "http://sparql.med2rdf.org/sparql",
+      {
+        "graph": "http://med2rdf.org/graph/dgidb"
+      }
+    ],
+    "chembl_molecule": "<http://rdf.ebi.ac.uk/resource/chembl/molecule/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "dgidb_drug": "<http://identifiers.org/dgidb/drug/>",
+    "dgidb_gene": "<http://identifiers.org/dgidb/gene/>",
+    "dgidb_interaction": "<http://identifiers.org/dgidb/interaction/>",
+    "dgio": "<http://purl.jp/bio/10/dgidb/>",
+    "ncbi_gene": "<http://identifiers.org/ncbigene/>",
+    "pubmed": "<http://identifiers.org/pubmed/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "sparql": {
+      "description": "Obrain drug-gene interaction pairs from DGIdb",
+      "variables": [
+        "interaction_type",
+        "drug_name",
+        "chembl_molecule",
+        "gene_name",
+        "alternative_name",
+        "ncbi_gene",
+        "publication"
+      ]
+    },
+    "stanza": {
+      "description": "Obrain drug-gene interaction pairs from DGIdb",
+      "parameters": {
+        "gene_name": "ADH1A"
+      },
+      "variables": [
+        "interaction_type",
+        "drug_name",
+        "chembl_molecule",
+        "gene_name",
+        "alternative_name",
+        "ncbi_gene",
+        "publication"
+      ]
+    },
+    "togoid": {
+      "description": "Obtain pairs of ChEMBL and NCBI Gene for TogoID",
+      "variables": [
+        "chembl_molecule",
+        "ncbi_gene"
+      ]
+    },
+    "dgidb": {
+      "output_dir": "stanza",
+      "label": "DGIdb",
+      "definition": "Stanza of drug-gene interaction",
+      "sparql": "stanza",
+      "parameters": {
+        "gene_name": {
+          "example": "ADH1A",
+          "description": "Gene symbol",
+          "required": true
+        }
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "disgenet",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/disgenet"
+        ]
+      }
+    ],
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "ensembl",
+    "endpoint": [
+      "https://rdfportal.org/ebi/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/ensembl"
+        ]
+      }
+    ],
+    "title": "Ensembl RDF",
+    "website": "https://www.ensembl.org",
+    "description": "ゲノム解読された脊椎生物およびその他の主要な真核生物を対象として自動アノテーションを行い、その結果をゲノムビューワやデータベースとして公開しているプロジェクトです。",
+    "tags": [
+      "Gene",
+      "Protein"
+    ],
+    "provider": "EMBL-EBI",
+    "creators": [
+      {
+        "name": "Shuya Ikeda",
+        "affiliation": "Database Center for Life Science"
+      }
+    ],
+    "version": 111,
+    "issued": "2024-01",
+    "licenses": [
+      "http://ensembl.org/info/about/legal/disclaimer.html"
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "so": "<http://purl.obolibrary.org/obo/so#>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "ensg": "<http://rdf.ebi.ac.uk/resource/ensembl/>",
+    "terms": "<http://rdf.ebi.ac.uk/terms/ensembl/>",
+    "ense": "<http://rdf.ebi.ac.uk/resource/ensembl.exon/>",
+    "ensp": "<http://rdf.ebi.ac.uk/resource/ensembl.protein/>",
+    "enst": "<http://rdf.ebi.ac.uk/resource/ensembl.transcript/>",
+    "ensgloss": "<http://ensembl.org/glossary/>",
+    "ensi": "<http://identifiers.org/ensembl/>",
+    "taxonomy": "<http://identifiers.org/taxonomy/>",
+    "uniprot": "<http://purl.uniprot.org/uniprot/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "sparql": {
+      "description": "Ensembl gene and chromosome",
+      "variables": [
+        "ensg_id",
+        "ensg_label",
+        "ensg_chromosome"
+      ],
+      "parameters": {
+        "ensg_taxonomy": "taxonomy:9606"
+      }
+    },
+    "issued": "2024-01",
+    "modified": null
+  },
+  {
+    "id": "exac",
+    "endpoint": "http://sparql.med2rdf.org/sparql",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "hco": "<http://identifiers.org/hco/>",
+    "hgnc": "<http://identifiers.org/hgnc/>",
+    "so": "<http://purl.obolibrary.org/obo/so#>",
+    "refseq": "<http://identifiers.org/refseq/>",
+    "dbsnp": "<http://identifiers.org/dbsnp>",
+    "m2r": "<http://med2rdf.org/ontology/med2rdf#>",
+    "ensembl": "<http://identifiers.org/ensembl/>",
+    "exac": {
+      "output_dir": "stanza",
+      "label": "ExAC",
+      "definition": "Stanza of a variant populations",
+      "sparql": "populations",
+      "parameters": {
+        "identifier": {
+          "example": "4-100197800-C-T",
+          "description": "ExAC identifier",
+          "required": true
+        }
+      }
+    },
+    "exo": "<http://purl.jp/bio/10/exac/>",
+    "browser": "<http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&highlight=hg19.>",
+    "hp": "<http://exac.broadinstitute.org/variant/>",
+    "annotations": {
+      "description": "Obrain variant annotations from ExAC",
+      "subject": "ExACValiation",
+      "parameters": {
+        "identifier": "4-100197800-C-T"
+      },
+      "variables": [
+        "identifier",
+        "allele_count",
+        "allele_num",
+        "num_of_homozygotes",
+        "allele_frequency",
+        "consequence",
+        "hgvs",
+        "annotation_consequence",
+        "annotation_gene",
+        "annotation_protein",
+        "annotation_transcript",
+        "annotation_gene_symbol",
+        "annotation_agvsc",
+        "annotation_hgvsp",
+        "annotation_hgnc"
+      ]
+    },
+    "populations": {
+      "description": "Obrain variant populations from ExAC",
+      "subject": "ExACValiation",
+      "parameters": {
+        "identifier": "4-100197800-C-T"
+      },
+      "variables": [
+        "identifier",
+        "population_label",
+        "population_allele_count",
+        "population_allele_frequency",
+        "population_allele_num",
+        "population_num_of_homozygotes"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "expressionatlas",
+    "endpoint": "https://integbio.jp/rdf/ebi/sparql",
+    "graphs": "http://rdf.ebi.ac.uk/dataset/expressionatlas",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "ensembl": "<http://rdf.ebi.ac.uk/resource/ensembl/>",
+    "gxaterms": "<http://rdf.ebi.ac.uk/terms/expressionatlas/>",
+    "gxa": "<http://rdf.ebi.ac.uk/resource/expressionatlas/>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "human_datasets": {
+      "description": "Expression Atlas Datasets of human",
+      "variables": [
+        "DataSet",
+        "dataset_id",
+        "dataset_desc"
+      ],
+      "parameters": {
+        "taxon": "obo:NCBITaxon_9606"
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "famsbase",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://fams.bio.chuo-u.ac.jp/GPCR/rdf/",
+          "http://fams.bio.chuo-u.ac.jp/ontology/"
+        ]
+      }
+    ],
+    "title": "FAMSBASE GPCR",
+    "website": null,
+    "description": "RDFized reference gene expresson dataset derived from CAGE and GeneChip experiments in the RefEx database.",
+    "tags": [
+      "Protein",
+      "Structure"
+    ],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Mitsuo Iwadate",
+        "affiliation": "Chuo University"
+      },
+      {
+        "name": "Shuichi Kawahsima",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": null,
+        "affiliation": null
+      }
+    ],
+    "version": "2016-03-24",
+    "issued": "2016-03-24",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0) Database Center for Life Science"
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "fams": "<http://purl.jp/bio/01/famsbase/>",
+    "famso": "<http://purl.jp/bio/01/famsbase/ontology/>",
+    "edam": "<http://edamontology.org/>",
+    "refseq": "<http://identifiers.org/refseq/>",
+    "up": "<http://identifiers.org/uniprot/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "pdb": "<http://identifiers.org/pdb/>",
+    "issued": "2016-03-24",
+    "modified": null
+  },
+  {
+    "id": "ggdonto",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://jcggdb.jp/rdf/diseases/ggdonto",
+          "http://jcggdb.jp/rdf/diseases/ggdonto-schema.rdf"
+        ]
+      }
+    ],
+    "title": "GGDonto",
+    "website": "http://acgg.asia/db/diseases/",
+    "description": "GGDonto is the Ontology of the Genetic Diseases related to the Glycan Metabolism. GGDonto describes the knowledge about Congenital Disorders of Glycosylation (CDG) and Lysosomal Storage Diseases (LSD). GGDonto provides the information on 120 genetic diseases of the glycan synthesis and the degradation and their causative genes.",
+    "tags": [
+      "Other biomolecule",
+      "Health/Disease",
+      "Gene",
+      "Ontology/Terminology/Nomenclature",
+      "Interaction/Pathway"
+    ],
+    "provider": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)",
+    "creators": [
+      {
+        "name": "Hisashi Narimatsu",
+        "affiliation": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)"
+      },
+      {
+        "name": "Toshihide Shikanai",
+        "affiliation": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)"
+      },
+      {
+        "name": "Elena Solovieva",
+        "affiliation": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)"
+      },
+      {
+        "name": "Noriaki Fujita",
+        "affiliation": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)"
+      }
+    ],
+    "version": "v.1.0",
+    "issued": "2017-01-25",
+    "licenses": [
+      "Attribution-NonCommercial-ShareAlike 2.1 Japan (CC BY-NC-SA 2.1)"
+    ],
+    "gdgdb_schema": "<http://jcggdb.jp/rdf/diseases/gdgdb-schema#>",
+    "ggdonto": "<http://jcggdb.jp/rdf/diseases/ggdonto#>",
+    "ggdonto_schema": "<http://jcggdb.jp/rdf/diseases/ggdonto-schema#>",
+    "gmncbi_schema": "<http://jcggdb.jp/rdf/diseases/gmncbi-schema#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Concept"
+      ]
+    },
+    "issued": "2017-01-25",
+    "modified": null
+  },
+  {
+    "id": "glycoepitope",
+    "endpoint": [
+      "https://integbio.jp/primary/sparql",
+      {
+        "graph": [
+          "http://rdf.glycoinfo.org/glycoepitope",
+          "http://www.glycoepitope.jp/epitopes/glycoepitope.owl"
+        ]
+      }
+    ],
+    "title": "GlycoEpitope",
+    "website": "https://www.glycoepitope.jp/",
+    "description": "GlycoEpitopeは、糖鎖抗体とその抗原についてのデータベースです",
+    "tags": [
+      "Other biomolecule",
+      "Structure"
+    ],
+    "provider": "立命館大学",
+    "creators": [
+      {
+        "name": "川嵜敏祐",
+        "affiliation": "立命館大学"
+      },
+      {
+        "name": "奥田修二郎",
+        "affiliation": "新潟大学"
+      }
+    ],
+    "version": "version 3",
+    "issued": "2015-11-18",
+    "license": [
+      {
+        "name": "Creative Commons Attribution-ShareAlike 2.1 Japan (CC BY-SA 2.1 JP)"
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en"
+      },
+      {
+        "credit": "GlycoEpitope licensed under CC Attribution-Share Alike 2.1 Japan"
+      }
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "glycan": "<http://purl.jp/bio/12/glyco/glycan#>",
+    "glycoepitope": "<http://www.glycoepitope.jp/epitopes/>",
+    "uniprot": "<http://www.uniprot.org/core/>",
+    "issued": "2015-11-18",
+    "modified": null
+  },
+  {
+    "id": "glycosmos",
+    "endpoint": [
+      "https://ts.glycosmos.org/sparql"
+    ],
+    "title": "GlyCosmos",
+    "website": "https://glycosmos.org/",
+    "description": "RDF description.",
+    "tags": [
+      "Glycan"
+    ],
+    "provider": "GlyCosmos Portal",
+    "creators": [
+      {
+        "name": "Kiyoko F. Aoki-Kinoshita",
+        "affiliation": "Soka University"
+      },
+      {
+        "name": "Osamu Kanie",
+        "affiliation": "Tokai University"
+      },
+      {
+        "name": "Toshisuke Kawasaki",
+        "affiliation": "Ritsumeikan University"
+      },
+      {
+        "name": "Tadashi Suzuki",
+        "affiliation": "RIKEN"
+      },
+      {
+        "name": "Kiichiro Totani",
+        "affiliation": "Seikei University"
+      },
+      {
+        "name": "Hiroshi Nakada",
+        "affiliation": "Kyoto Sangyo University"
+      },
+      {
+        "name": "Shunji Natsuka",
+        "affiliation": "Niigata University"
+      },
+      {
+        "name": "Shoko Nishihara",
+        "affiliation": "Soka University"
+      },
+      {
+        "name": "Yoshiki Yamaguchi",
+        "affiliation": "Tohoku Medical and Pharmaceutical University"
+      },
+      {
+        "name": "Katsuko Yamashita",
+        "affiliation": "Yokohama City University"
+      },
+      {
+        "name": "Issaku Yamada",
+        "affiliation": "The Noguchi Institute"
+      }
+    ],
+    "version": "2021-08-09",
+    "issued": "2021-08-09",
+    "licenses": [
+      "Creative Commons Attribution 4.0 International License (CC BY 4.0)"
+    ],
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "glycan": "<http://purl.jp/bio/12/glyco/glycan#>",
+    "glytoucan": "<http://www.glytoucan.org/glyco/owl/glytoucan#>",
+    "info": "<http://rdf.glycoinfo.org/glycan/>",
+    "ncbitaxon": "<http://purl.org/obo/owl/NCBITaxon#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "p15": "<http://rdf.glytoucan.org/partner/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "ref": "<http://rdf.glycoinfo.org/references/>",
+    "resent": "<http://rdf.glycoinfo.org/resource-entry/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "src": "<http://rdf.glycoinfo.org/source/>",
+    "up": "<http://purl.uniprot.org/core/>",
+    "wurcs": "<http://www.glycoinfo.org/glyco/owl/wurcs#>",
+    "sbsmpt": "<http://www.glycoinfo.org/glyco/owl/relation#>",
+    "mass": "<https://glycoinfo.gitlab.io/wurcsframework/org/glycoinfo/wurcsframework/1.0.1/wurcsframework-1.0.1.jar#>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Glycan",
+        "iupac_condensed",
+        "sequence",
+        "glyco_src"
+      ]
+    },
+    "subsumption": {
+      "description": "get subsumption relationship.",
+      "variables": [
+        "WurcsURI",
+        "mass",
+        "subsuming_wurcs"
+      ]
+    },
+    "tissue": {
+      "description": "get tissue info.",
+      "variables": [
+        "Glycan",
+        "uberon_label"
+      ]
+    },
+    "issued": "2021-08-09",
+    "modified": null
+  },
+  {
+    "id": "glytoucan",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://rdf.glycoinfo.org/glytoucan",
+          "http://www.glytoucan.org/glyco/owl/glytoucan"
+        ]
+      }
+    ],
+    "title": "GlyTouCan",
+    "website": "https://glytoucan.org/",
+    "description": "GlyTouCan is the international glycan structure repository.",
+    "tags": [
+      "Other biomolecule",
+      "Structure"
+    ],
+    "provider": "National Institute of Advanced Industrial Science and Technology (AIST)",
+    "creators": [
+      {
+        "name": "Hisashi Narimatsu",
+        "affiliation": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)"
+      },
+      {
+        "name": "Kiyoko F. Aoki-Kinoshita",
+        "affiliation": "Soka University"
+      },
+      {
+        "name": "Daisuke Shinmachi",
+        "affiliation": "Soka University"
+      }
+    ],
+    "version": "Ver1.0",
+    "issued": "2015-09-04",
+    "licenses": [
+      "Creative Commons Attribution 2.1 Japan (CC BY 2.1 JP)",
+      "GlyTouCan licensed under CC Attribution 2.1 Japan"
+    ],
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "glycan": "<http://purl.jp/bio/12/glyco/glycan#>",
+    "glytoucan": "<http://www.glytoucan.org/glyco/owl/glytoucan#>",
+    "glycanid": "<http://rdf.glycoinfo.org/glycan/>",
+    "get_id": {
+      "description": "Obtain pairs of glycan ID and its entry URL",
+      "variables": [
+        "id",
+        "GlyTouCan_entry_URL"
+      ]
+    },
+    "get_motif_label": {
+      "description": "Retrieve motif labels for each glycan ID",
+      "variables": [
+        "id",
+        "Glycan_Motif",
+        "label"
+      ]
+    },
+    "get_sequence": {
+      "description": "Retrieve sequence data for each glycan ID",
+      "variables": [
+        "id",
+        "Sequence"
+      ]
+    },
+    "get_mass": {
+      "description": "Retrieve mass for each glycan ID",
+      "variables": [
+        "id",
+        "Mass"
+      ]
+    },
+    "issued": "2015-09-04",
+    "modified": null
+  },
+  {
+    "id": "go",
+    "endpoint": [
+      "https://integbio.jp/rdf/sparql"
+    ],
+    "title": "Gene Ontology",
+    "website": "http://geneontology.org/",
+    "description": "The Gene Ontology resource provides a computational representation of our current scientific knowledge about the functions of genes (or, more properly, the protein and non-coding RNA molecules produced by genes) from many different organisms, from humans to bacteria.",
+    "tags": [],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Name 1",
+        "affiliation": "Affiliation 1"
+      },
+      {
+        "name": "Name 2",
+        "affiliation": "Affiliation 2"
+      }
+    ],
+    "version": "2020-01-01",
+    "issued": "2020-01-01",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "go": "<http://purl.obolibrary.org/obo/go#>",
+    "oboinowl": "<http://www.geneontology.org/formats/oboInOwl#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Class"
+      ]
+    },
+    "refex_entry": {
+      "output_dir": "stanza",
+      "label": "RefEx entry",
+      "definition": "Stanza for RefEx entry",
+      "sparql": "stanza_sparql",
+      "parameters": {
+        "refex_id": {
+          "example": "RFX0000062273",
+          "description": "RefEx identifier",
+          "required": true
+        }
+      }
+    },
+    "issued": "2020-01-01",
+    "modified": null
+  },
+  {
+    "id": "gtdb",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql"
+    ],
+    "another_endpoint": [
+      "https://dev.togomedium.org/sparql/"
+    ],
+    "title": "GTDB",
+    "website": "https://gtdb.ecogenomic.org/",
+    "description": "The Genome Taxonomy Database",
+    "tags": [
+      "taxonomy",
+      "bacteria",
+      "archaea"
+    ],
+    "provider": "The University of Queensland",
+    "creators": [
+      {
+        "name": "Shuichi Kawashima",
+        "affiliation": "https://dbcls.rois.ac.jp/"
+      }
+    ],
+    "version": "2024-06-27",
+    "issued": "2024-06-27",
+    "licenses": [
+      "See licenses at https://gtdb.ecogenomic.org/licenses"
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "gtdb": "<http://identifiers.org/gtdb/>",
+    "taxid": "<http://identifiers.org/taxonomy/>",
+    "biosample": "<http://identifiers.org/biosample/>",
+    "bioproject": "<http://identifiers.org/bioproject/>",
+    "gca": "<http://identifiers.org/insdc.gca/>",
+    "ncbigenome": "<http://www.ncbi.nlm.nih.gov/datasets/genome/>",
+    "issued": "2024-06-27",
+    "modified": null
+  },
+  {
+    "id": "gwascatalog",
+    "endpoint": "https://togovar.org/sparql",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "terms": "<http://med2rdf.org/gwascatalog/terms/>",
+    "gwas": "<http://rdf.ebi.ac.uk/terms/gwas/>",
+    "oban": "<http://purl.org/oban/>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "ro": "<http://www.obofoundry.org/ro/ro.owl#>",
+    "study": "<http://www.ebi.ac.uk/gwas/studies/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "pubmed": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "med2rdf": "<http://med2rdf.org/ontology/>",
+    "ensg": "<http://identifiers.org/ensembl/>",
+    "dbsnp": "<http://identifiers.org/dbsnp/>",
+    "association": {
+      "description": "GWAS Catalog association and study record for dbsnp rs671 variant",
+      "parameters": {
+        "snps": "rs671"
+      },
+      "variables": [
+        "strongest_snp_risk_allele",
+        "p_value",
+        "beta",
+        "beta_unit",
+        "ci_text",
+        "mapped_trait_text",
+        "mapped_trait_uri",
+        "refpubmed",
+        "study",
+        "study_description",
+        "initial_sample_size",
+        "replication_sample_size"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "hco",
+    "endpoint": "http://sparql.med2rdf.org/sparql",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "hco": {
+      "output_dir": "stanza",
+      "label": "HCO",
+      "definition": "Stanza of a HCO human chromosome",
+      "sparql": "stanza_sparql"
+    },
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "sparql": {
+      "description": "Obrain human chromosomes from the HCO ontology",
+      "variables": [
+        "Chromosome",
+        "build",
+        "length",
+        "insdc",
+        "refseq",
+        "ucsc",
+        "ensembl"
+      ]
+    },
+    "stanza_sparql": {
+      "description": "Obtain a human chromosome data from the HCO ontology",
+      "parameters": {
+        "insdc": "<http://identifiers.org/insdc/CM000663.1>"
+      },
+      "variables": [
+        "build",
+        "length",
+        "insdc",
+        "refseq",
+        "ucsc",
+        "ensembl"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "hgnc",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/hgnc"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "http://sparql.med2rdf.org/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/hgnc"
+        ]
+      }
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "hgnc": {
+      "output_dir": "stanza",
+      "label": "HGNC record",
+      "definition": "Stanza of a HGNC gene record",
+      "sparql": "stanza_sparql",
+      "parameters": {
+        "gene": {
+          "example": "TP53",
+          "description": "HGNC gene symbol",
+          "required": true
+        }
+      }
+    },
+    "ido": "<http://rdf.identifiers.org/ontology/>",
+    "idt": "<http://identifiers.org/>",
+    "m2r": "<http://med2rdf.org/ontology/med2rdf#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sparql": {
+      "description": "Obrain gene records from the HGNC data",
+      "variables": [
+        "gene_id",
+        "hgnc_id",
+        "description",
+        "location",
+        "ncbigene_id",
+        "ensembl_id",
+        "uniprot_id",
+        "pubmed_id"
+      ]
+    },
+    "stanza_sparql": {
+      "description": "Obtain a gene record from the HGNC data",
+      "parameters": {
+        "gene_id": "TP53"
+      },
+      "variables": [
+        "gene_id",
+        "description",
+        "see_also",
+        "reference",
+        "alt_label"
+      ]
+    },
+    "togoid": {
+      "description": "Extract link information from the HGNC data",
+      "variables": [
+        "gene_id",
+        "hgnc_id",
+        "ncbigene_id",
+        "ensembl_id",
+        "ena_id",
+        "insdc_id",
+        "refseq_id",
+        "ccds_id",
+        "uniprot_id",
+        "pubmed_id",
+        "mgi_id",
+        "rgd_id",
+        "lrg_id",
+        "omim_id",
+        "orphanet_id",
+        "mirbase_id",
+        "ec_id"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "hint",
+    "endpoint": "http://sparql.med2rdf.org/sparql",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "hnt": "<http://purl.jp/10/hint/>",
+    "bp3": "<http://www.biopax.org/release/biopax-level3.owl#>",
+    "pint": "<http://purl.jp/10/pint/>",
+    "uni": "<http://identifiers.org/uniprot/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sparql": {
+      "description": "Obrain protein-protein interaction pairs from the HiNT database",
+      "subject": "HiNT",
+      "variables": [
+        "data_source",
+        "display_hame",
+        "evidence",
+        "name",
+        "pair0",
+        "pair1",
+        "network_variety",
+        "accuracy"
+      ]
+    },
+    "pair_stanza": {
+      "description": "Get just a pair of interaction from the HiNT database for TogoStanza",
+      "subject": "HiNT",
+      "parameters": {
+        "pair0": "uni:A0A024QYV7"
+      },
+      "variables": [
+        "pair0",
+        "pair1",
+        "evidence"
+      ]
+    },
+    "hint_pair": {
+      "output_dir": "stanza",
+      "label": "HiNT pair",
+      "definition": "Stanza of a protein-protein interaction pair",
+      "sparql": "pair_stanza",
+      "parameters": {
+        "pair0": {
+          "example": "uni:A0A024QYV7",
+          "description": "UniProt identifier",
+          "required": true
+        }
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "homologene",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/homologene"
+        ]
+      }
+    ],
+    "title": "HomoloGene RDF",
+    "website": "https://www.ncbi.nlm.nih.gov/homologene/",
+    "description": "HomoloGene RDF is a translation of HomoloGene data into RDF.",
+    "tags": [
+      "Genome",
+      "Gene",
+      "Phylogeny/Classification"
+    ],
+    "provider": "National Center for Biotechnology Information",
+    "creators": [
+      {
+        "name": "Hirokazu Chiba",
+        "affiliation": "Database Center for Life Science"
+      }
+    ],
+    "version": "release_20230517",
+    "issued": "2023-05-17",
+    "licenses": [
+      "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+    ],
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "homologene": "<http://identifiers.org/homologene/>",
+    "taxonomy": "<http://identifiers.org/taxonomy/>",
+    "ncbigene": "<http://identifiers.org/ncbigene/>",
+    "ncbiprotein": "<http://identifiers.org/ncbiprotein/>",
+    "taxon": "<http://ddbj.nig.ac.jp/ontologies/taxonomy/>",
+    "orth": "<http://purl.org/net/orth#>",
+    "sparql": {
+      "description": "Get groups of orthologous genes",
+      "variables": [
+        "Group",
+        "gene"
+      ]
+    },
+    "issued": "2023-05-17",
+    "modified": null
+  },
+  {
+    "id": "hop",
+    "endpoint": [
+      "https://orth.dbcls.jp/sparql-dev"
+    ],
+    "title": "RDF title",
+    "website": "https://example.com/",
+    "description": "RDF description.",
+    "tags": [],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Name 1",
+        "affiliation": "Affiliation 1"
+      },
+      {
+        "name": "Name 2",
+        "affiliation": "Affiliation 2"
+      }
+    ],
+    "version": "2020-01-01",
+    "issued": "2020-01-01",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "ncbigene": "<http://identifiers.org/ncbigene/>",
+    "ncbiprotein": "<http://identifiers.org/ncbiprotein/>",
+    "hop": "<http://purl.org/net/orthordf/hOP/ontology#>",
+    "orth": "<http://purl.org/net/orth#>",
+    "group": "<http://purl.org/net/orthordf/hOP/group/>",
+    "organism": "<http://purl.org/net/orthordf/hOP/organism/>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "ClusterOfOrthologs"
+      ]
+    },
+    "issued": "2020-01-01",
+    "modified": null
+  },
+  {
+    "id": "hpo",
+    "endpoint": [
+      "https://integbio.jp/rdf/sparql"
+    ],
+    "title": "RDF title",
+    "website": "https://example.com/",
+    "description": "RDF description.",
+    "tags": [],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Name 1",
+        "affiliation": "Affiliation 1"
+      },
+      {
+        "name": "Name 2",
+        "affiliation": "Affiliation 2"
+      }
+    ],
+    "version": "2020-01-01",
+    "issued": "2020-01-01",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "hp": "<http://identifiers.org/HP:>",
+    "oboinowl": "<http://www.geneontology.org/formats/oboInOwl#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Class"
+      ]
+    },
+    "issued": "2020-01-01",
+    "modified": null
+  },
+  {
+    "id": "imethyl",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#> .",
+    "skos": "<http://www.w3.org/2004/02/skos/core#> .",
+    "dct": "<http://purl.org/dc/terms/> .",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#> .",
+    "obo": "<http://purl.obolibrary.org/obo/> .",
+    "sio": "<http://semanticscience.org/resource/> .",
+    "im": "<http://purl.jp/bio/10/imethyl/dataset/> .",
+    "imo": "<http://purl.jp/bio/10/imethyl/ontology/> .",
+    "imd": "<http://purl.jp/bio/10/imethyl/dataset/> .",
+    "ims": "<http://purl.jp/bio/10/imethyl/sample/> .",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "instruct",
+    "endpoint": "http://sparql.med2rdf.org/sparql",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "pint": "<http://purl.jp/10/pint/>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "ins": "<http://purl.jp/10/instruct/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "uni": "<http://identifiers.org/uniprot/>",
+    "pfm": "<http://identifiers.org/Pfam/>",
+    "bp3": "<http://www.biopax.org/release/biopax-level3.owl#>",
+    "sparql": {
+      "description": "Obrain protein-protein interaction pairs from the INstruct database",
+      "subject": "INstruct",
+      "variables": [
+        "data_source",
+        "display_hame",
+        "evidence",
+        "name",
+        "pair0",
+        "pair1"
+      ]
+    },
+    "pair_stanza": {
+      "description": "Get just a pair of interaction from the INstruct database for TogoStanza",
+      "subject": "INstruct",
+      "parameters": {
+        "pair0": "uni:Q05513"
+      },
+      "variables": [
+        "pair0",
+        "pair1",
+        "evidence"
+      ]
+    },
+    "instruct_pair": {
+      "output_dir": "stanza",
+      "label": "INstruct pair",
+      "definition": "Stanza of a protein-protein interaction pair",
+      "sparql": "pair_stanza",
+      "parameters": {
+        "pair0": {
+          "example": "uni:A0A024QYV7",
+          "description": "UniProt identifier",
+          "required": true
+        }
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "interview-form",
+    "endpoint": "http://sparql.med2rdf.org/sparql",
+    "if": "<http://med2rdf.org/if/800126_2590014F1021_1_015_1F#>",
+    "pi": "<http://med2rdf.org/pi/800126_2590014F1021_1_12#>",
+    "yjc": "<http://med2rdf.org/if/yjcode/>",
+    "pio": "<http://med2rdf.org/ontology/pio/>",
+    "ifo": "<http://med2rdf.org/ontology/ifo/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "pav": "<http://purl.org/pav/>",
+    "olo": "<http://purl.org/ontology/olo/core#>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "prism": "<http://prismstandard.org/namespaces/1.2/basic/>",
+    "pmid": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "sparql": {
+      "description": "Obrain IF_0",
+      "variables": [
+        "package_insert",
+        "drug_label"
+      ]
+    },
+    "derivation": {
+      "variables": [
+        "InterviewForm",
+        "if_drug_name",
+        "derivation"
+      ]
+    },
+    "kinki_sparql": {
+      "description": "Obtain data from section 8.2",
+      "variables": [
+        "InterviewForm",
+        "if_8_2_item",
+        "if_8_2_ref"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "jcm",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://metadb.riken.jp/db/xsearch_jcm_brso"
+        ]
+      }
+    ],
+    "title": "Metadata of JCM resources",
+    "website": "http://jcm.brc.riken.jp/ja/",
+    "description": "A RDF-based meta-database of microbial strains used in various researches such as biology, environment and human health as bioresources. Microbial strains are available from Japan Collection of Microorganisms (JCM) in RIKEN BioResource Center. Please visit data browser at http://metadb.riken.jp/metadb/db/rikenbrc_jcm_microbe",
+    "tags": [
+      "Organism",
+      "Bioresource"
+    ],
+    "provider": "RIKEN",
+    "creators": [
+      {
+        "name": "Terue Takatsuki",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Hiroshi Masuya",
+        "affiliation": "RIKEN Bioresource research center"
+      },
+      {
+        "name": "Moriya Ohkuma",
+        "affiliation": "Microbe Division, RIKEN Bioresource research center"
+      }
+    ],
+    "version": "2019-06-04",
+    "issued": "2019-06-04",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "atcc": "<http://identifiers.org/atcc/>",
+    "ncbitaxnomy": "<http://identifiers.org/taxonomy/>",
+    "jcm": "<http://metadb.riken.jp/db/rikenbrc_jcm_microbe/>",
+    "gm": "<http://purl.jp/bio/10/gm/>",
+    "mccv": "<http://purl.jp/bio/10/mccv#>",
+    "mpo": "<http://purl.jp/bio/10/mpo/>",
+    "pubmed": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "rikenJCMimage": "<http://www.jcm.riken.jp/JCM/img/>",
+    "rikenJCM": "<http://www.jcm.riken.jp/cgi-bin/jcm/>",
+    "wfcc": "<http://www.wfcc.info/ccinfo/collection/by_id/>",
+    "insdc": "<https://identifiers.org/insdc:>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "meo": "<http://purl.jp/bio/11/meo/>",
+    "pdo": "<http://purl.jp/bio/11/pdo/>",
+    "issued": "2019-06-04",
+    "modified": null
+  },
+  {
+    "id": "jpostdb",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://jpost.org/graph/database",
+          "http://jpost.org/graph/ontology"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "https://tools.jpostdb.org/proxy/sparql",
+      {
+        "graph": [
+          "http://jpost.org/graph/database",
+          "http://jpost.org/graph/ontology"
+        ]
+      }
+    ],
+    "title": "jPOST databse RDF",
+    "website": "https://globe.jpostdb.org/",
+    "description": "jPOST database RDF is described the re-analyzed proteome dataset in the jPOST project.",
+    "tags": [],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Yuki Moriya",
+        "affiliation": "Database Center for Life Science"
+      }
+    ],
+    "version": 202006,
+    "issued": "2020-06-09",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "idtax": "<http://identifiers.org/taxonomy/>",
+    "idup": "<http://identifiers.org/uniprot/>",
+    "ncit": "<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>",
+    "pxd": "<http://proteomecentral.proteomexchange.org/dataset/>",
+    "up": "<http://purl.uniprot.org/uniprot/>",
+    "bid": "<http://rdf.jpostdb.org/bid/>",
+    "jpostdb": "<http://rdf.jpostdb.org/entry/>",
+    "jpost": "<http://rdf.jpostdb.org/ontology/jpost.owl#>",
+    "unimod": "<http://www.unimod.org/obo/unimod.obo#>",
+    "vcard": "<http://www.w3.org/2006/vcard/ns#>",
+    "jporep": "<https://repository.jpostdb.org/entry/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "sparql": {
+      "description": "get proteins in a dataset",
+      "parameters": {
+        "JpostDataset": "jpostdb:DS810_1"
+      },
+      "variables": [
+        "JpostDataset",
+        "taxonomy",
+        "uniprot",
+        "Protein"
+      ]
+    },
+    "sparql_obj_test_1": {
+      "description": "get proteins in a dataset",
+      "variables": [
+        "Protein",
+        "peptide"
+      ]
+    },
+    "sparql_obj_test_2": {
+      "description": "get proteins in a dataset",
+      "variables": [
+        "Protein",
+        "Peptide"
+      ]
+    },
+    "sparql_obj_test_3": {
+      "description": "get proteins in a dataset",
+      "parameters": {
+        "JpostDataset": "jpostdb:DS810_1"
+      },
+      "variables": [
+        "JpostDataset",
+        "protein",
+        "peptide"
+      ]
+    },
+    "peptide_mapping": {
+      "description": "peptide mapping",
+      "parameters": {
+        "protein_label": "Q9NYF8"
+      },
+      "variables": [
+        "protein_label",
+        "Protein",
+        "Peptide",
+        "aa_sequence",
+        "begin",
+        "end"
+      ]
+    },
+    "protein_phospho": {
+      "description": "phosphorylation position",
+      "parameters": {
+        "protein_label": "Q9NYF8"
+      },
+      "variables": [
+        "protein_label",
+        "Protein",
+        "Peptide",
+        "aa_sequence",
+        "begin",
+        "phospho_position"
+      ]
+    },
+    "issued": "2020-06-09",
+    "modified": null
+  },
+  {
+    "id": "kero",
+    "endpoint": [
+      "https://rdfportal.org/kero/sparql"
+    ],
+    "title": "DBKERO RDF",
+    "website": "http://kero.hgc.jp/rdf/",
+    "description": "DBKERO is a collection of multi-omics data sets including SNV, RNA-seq, ChIP-seq, BS-seq and TSS-seq. The ChIP-seq part is big, so its lite version chip_seq_lite is included. The original big ChIP-seq data can also be downloaded at https://integbio.jp/rdf/download/kero/2017-01-27/all/chip_seq_all.tar.gz .",
+    "tags": [
+      "Genome",
+      "Polymorphism",
+      "Other DNA",
+      "Gene expression",
+      "Others"
+    ],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Shin Kawano",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Hiroyuki Wakaguri",
+        "affiliation": "Graduate School of Frontier Sciences, The University of Tokyo"
+      },
+      {
+        "name": "Yutaka Suzuki",
+        "affiliation": "Graduate School of Frontier Sciences, The University of Tokyo"
+      }
+    ],
+    "version": "2017-01-27",
+    "issued": "2017-01-27",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "kero": "<http://kero.hgc.jp/ontology/kero.owl#>",
+    "bsseqdata": "<http://kero.hgc.jp/rdf/data/9/BSseq/>",
+    "bsseqdataset": "<http://kero.hgc.jp/rdf/dataset/9/BSseq/>",
+    "chipseqdata": "<http://kero.hgc.jp/rdf/data/9/ChIPseq/>",
+    "chipseqdataset": "<http://kero.hgc.jp/rdf/dataset/9/ChIPseq/>",
+    "chromhmmdata": "<http://kero.hgc.jp/rdf/data/9/ChromHMM/>",
+    "chromhmmdataset": "<http://kero.hgc.jp/rdf/dataset/9/ChromHMM/>",
+    "rnaseqdata": "<http://kero.hgc.jp/rdf/data/9/RNAseq/>",
+    "rnaseqdataset": "<http://kero.hgc.jp/rdf/dataset/9/RNAseq/>",
+    "snvdata": "<http://kero.hgc.jp/rdf/data/9/SNV/>",
+    "snvdataset": "<http://kero.hgc.jp/rdf/dataset/9/SNV/>",
+    "tssseqdata": "<http://kero.hgc.jp/rdf/data/9/TSSseq/>",
+    "tssseqdataset": "<http://kero.hgc.jp/rdf/dataset/9/TSSseq/>",
+    "sample": "<http://kero.hgc.jp/rdf/sample/>",
+    "species": "<http://kero.hgc.jp/rdf/species/>",
+    "taxonomy": "<http://identifiers.org/taxonomy/>",
+    "hg38": "<http://kero.hgc.jp/rdf/resource/homo_sapiens/hg38/>",
+    "grch38": "<http://rdf.ebi.ac.uk/resource/ensembl/homo_sapiens/GRCh38/>",
+    "ncbigene": "<http://identifiers.org/ncbigene/>",
+    "refseq": "<http://identifiers.org/refseq/>",
+    "dbsnp": "<http://identifiers.org/dbsnp/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dcat": "<http://www.w3.org/ns/dcat#>",
+    "efo": "<http://www.ebi.ac.uk/efo/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "dbpedia": "<http://dbpedia.org/ontology/>",
+    "snomedct": "<http://purl.bioontology.org/ontology/SNOMEDCT/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "ensemblevariation": "<http://rdf.ebi.ac.uk/terms/ensemblvariation#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Methyl-seqDataset",
+        "Chip-seqDataset",
+        "ChromhmmDataset",
+        "Rna-seqDataset",
+        "SnvDataset",
+        "Tss-seqDataset"
+      ]
+    },
+    "issued": "2017-01-27",
+    "modified": null
+  },
+  {
+    "id": "knapsack",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://purl.jp/knapsack/"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "https://mb2.ddbj.nig.ac.jp/sparql",
+      {
+        "graph": [
+          "http://purl.jp/knapsack/"
+        ]
+      }
+    ],
+    "title": "KNApSAcK RDF",
+    "website": [
+      "https://ddbj.nig.ac.jp/public/rdf/metabobank/knapsack/",
+      "http://www.knapsackfamily.com"
+    ],
+    "description": "KNApSAcKファミリーデータベースのRDFデータセット",
+    "tags": [
+      "Compound",
+      "Taxonomy",
+      "Publication",
+      "Activity"
+    ],
+    "provider": "国立遺伝学研究所",
+    "creators": [
+      {
+        "name": "藤澤　貴智",
+        "affiliation": "国立遺伝学研究所"
+      },
+      {
+        "nama": "櫛田　達矢",
+        "affiliation": "国立研究開発法人理化学研究所 バイオリソース研究センター"
+      },
+      {
+        "name": "山本　泰智",
+        "affiliation": "ライフサイエンス統合データベースセンター"
+      },
+      {
+        "name": "時松　敏明",
+        "affiliation": "国立遺伝学研究所"
+      },
+      {
+        "name": "山田　一作",
+        "affiliation": "野口研究所"
+      },
+      {
+        "name": "畠中　秀樹",
+        "affiliation": "ライフサイエンス統合データベースセンター"
+      },
+      {
+        "name": "森田（平井）晶",
+        "affiliation": "奈良先端科学技術大学院大学"
+      },
+      {
+        "name": "金谷　重彦",
+        "affiliation": "奈良先端科学技術大学院大学"
+      },
+      {
+        "name": "有田　正規",
+        "affiliation": "国立遺伝学研究所"
+      }
+    ],
+    "version": "0.2.0",
+    "issued": "2022-05-30",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "prefix": "<http://purl.jp/knapsack/>",
+    "@base": "<http://purl.jp/knapsack/>",
+    "knapsack": "<http://purl.jp/knapsack/resource#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "cheminf": "<http://semanticscience.org/resource/>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "test_attribute": {
+      "description": "Get attribute information for C00000001 in KNApSAcK Core",
+      "variables": [
+        "KNApSAcKCoreRecord",
+        "knapsack_id",
+        "molecular_entity_name",
+        "molecular_formula",
+        "value_mw",
+        "value_smiles",
+        "value_inchikey",
+        "value_inchi",
+        "rdfs_seealso"
+      ],
+      "parameters": {
+        "knapsack_id": "C00000001"
+      }
+    },
+    "test_mw": {
+      "description": "Get KNApSAcK Core compounds with molecular weights greater than 3000",
+      "variables": [
+        "KNApSAcKCoreRecord",
+        "knapsack_id",
+        "molecular_entity_name",
+        "molecular_formula",
+        "value_mw",
+        "rdfs_seealso"
+      ],
+      "options": {
+        "limit": false,
+        "order_by": [
+          {
+            "value_mw": "asc"
+          }
+        ]
+      }
+    },
+    "test_xrefs": {
+      "description": "Get related resources for C00000001 in KNApSAcK Core",
+      "variables": [
+        "knapsack_id",
+        "skos_close_match"
+      ],
+      "parameters": {
+        "knapsack_id": "C00000001"
+      }
+    },
+    "issued": "2022-05-30",
+    "modified": null
+  },
+  {
+    "id": "ligandbox",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://purl.jp/bio/5/ligandbox/",
+          "http://rdfportal.org/rdf/download/liganbox/latest/rdf/ontology-1/ligandbox.owl"
+        ]
+      }
+    ],
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "linked_icgc",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://icgc.link/release_20"
+        ]
+      }
+    ],
+    "title": "RDF title",
+    "website": "https://example.com/",
+    "description": "RDF description.",
+    "tags": [],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Name 1",
+        "affiliation": "Affiliation 1"
+      },
+      {
+        "name": "Name 2",
+        "affiliation": "Affiliation 2"
+      }
+    ],
+    "version": "2020-01-01",
+    "issued": "2020-01-01",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "icgc": "<http://icgc.link/>",
+    "detection": "<http://icgc.link/Detection/>",
+    "donor": "<http://icgc.link/Donor/>",
+    "effect": "<http://icgc.link/Effect/>",
+    "gene": "<http://icgc.link/Gene/>",
+    "mutation": "<http://icgc.link/Mutation/>",
+    "project": "<http://icgc.link/Project/>",
+    "vocab": "<http://icgc.link/vocab/>",
+    "ensembl": "<http://identifiers.org/ensembl/>",
+    "ivocab": "<inv-http://icgc.link/vocab/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Mutation",
+        "effect",
+        "detection",
+        "doner_id",
+        "project",
+        "affected_gene",
+        "ensembl"
+      ]
+    },
+    "issued": "2020-01-01",
+    "modified": null
+  },
+  {
+    "id": "mbgd",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://mbgd.genome.ad.jp/rdf/resource/default",
+          "http://mbgd.genome.ad.jp/rdf/resource/gene",
+          "http://mbgd.genome.ad.jp/rdf/resource/organism",
+          "http://mbgd.genome.ad.jp/rdf/resource/nucseq",
+          "http://mbgd.genome.ad.jp/rdf/resource/xref_uniprot",
+          "http://purl.jp/bio/11/orth",
+          "http://purl.jp/bio/11/mbgd"
+        ]
+      }
+    ],
+    "title": "RDF title",
+    "website": "https://example.com/",
+    "description": "RDF description.",
+    "tags": [],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Name 1",
+        "affiliation": "Affiliation 1"
+      },
+      {
+        "name": "Name 2",
+        "affiliation": "Affiliation 2"
+      }
+    ],
+    "version": "2020-01-01",
+    "issued": "2020-01-01",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "mbgd": "<http://purl.jp/bio/11/mbgd#>",
+    "orth": "<http://purl.org/net/orth#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "void": "<http://rdfs.org/ns/void#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "pav": "<http://purl.org/pav/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "ncbi": "<http://www.ncbi.nlm.nih.gov/>",
+    "ncbiprotein": "<http://www.ncbi.nlm.nih.gov/protein/>",
+    "taxid": "<http://identifiers.org/taxonomy/>",
+    "up": "<http://purl.uniprot.org/core/>",
+    "uniprot": "<http://purl.uniprot.org/uniprot/>",
+    "uptax": "<http://purl.uniprot.org/taxonomy/>",
+    "resource": "<http://mbgd.genome.ad.jp/rdf/resource/>",
+    "organism": "<http://mbgd.genome.ad.jp/rdf/resource/organism/>",
+    "nucseq": "<http://mbgd.genome.ad.jp/rdf/resource/nucseq/>",
+    "cluster": "<http://mbgd.genome.ad.jp/rdf/resource/cluster/>",
+    "domain": "<http://mbgd.genome.ad.jp/rdf/resource/domain/2018-01_default/tax1129:1182/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Cluster",
+        "gene",
+        "dataset",
+        "nucseq",
+        "organism"
+      ]
+    },
+    "issued": "2020-01-01",
+    "modified": null
+  },
+  {
+    "id": "medgen",
+    "endpoint": [
+      "https://rdfportal.org/ncbi/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/medgen"
+        ]
+      }
+    ],
+    "title": "MedGen",
+    "website": "https://www.ncbi.nlm.nih.gov/medgen",
+    "description": "MedGenは遺伝が寄与している病態の属性など、ヒト医学遺伝学に関連する情報を整理したデータベースです",
+    "tags": [
+      "Health/Disease",
+      "Ontology/Terminology/Nomenclature"
+    ],
+    "provider": "National Center for Biotechnology Information",
+    "creators": [
+      {
+        "name": "川島 秀一",
+        "affiliation": "大学共同利用機関法人 情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター"
+      },
+      {
+        "name": "Med2RDF project"
+      }
+    ],
+    "version": "Med2RDF version based on release_20230605",
+    "issued": "2023-06-05",
+    "licenses": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+      },
+      {
+        "Source": "U.S. National Library of Medicine."
+      }
+    ],
+    "dct": "<http://purl.org/dc/terms/>",
+    "medgen": "<http://www.ncbi.nlm.nih.gov/medgen/>",
+    "mo": "<http://med2rdf/ontology/medgen#>",
+    "mo_ispref": "<http://med2rdf/ontology/medgen/ispref#>",
+    "pubmed": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "sty": "<http://purl.bioontology.org/ontology/STY/>",
+    "ncbigene": "<http://identifiers.org/ncbigene/>",
+    "ncbigeneo": "<https://dbcls.github.io/ncbigene-rdf/ontology.ttl#>",
+    "taxonomy": "<http://identifiers.org/taxonomy/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "default": {
+      "description": "Retrieve attributes not in MGDEF, MGSAT, MGCONSO of C0023467 (Acute myeloid leukemia)",
+      "variables": [
+        "Medgen",
+        "sty",
+        "identifier",
+        "label",
+        "definition",
+        "disease_has_associated_gene",
+        "expanded_form_of",
+        "has_alias",
+        "has_expanded_form",
+        "has_manifestation",
+        "has_permuted_term",
+        "inverse_isa",
+        "isa",
+        "manifestation_of",
+        "undefined_relationship",
+        "name_label"
+      ],
+      "parameters": {
+        "identifier": "C0023467"
+      }
+    },
+    "mgdef": {
+      "description": "Retrieve MGDEF and MGSAT of C0023467 (Acute myeloid leukemia)",
+      "variables": [
+        "identifier",
+        "mgdef_source",
+        "definition",
+        "mgdef_definition"
+      ],
+      "parameters": {
+        "identifier": "C0023467"
+      }
+    },
+    "mgconso": {
+      "description": "Retrieve MGCONSO (link to external databases) of C0023467 (Acute myeloid leukemia)",
+      "variables": [
+        "identifier",
+        "mgconso_aui",
+        "mgconso_ispref",
+        "mgconso_stt",
+        "mgconso_ts",
+        "mgconso_label",
+        "mgconso_source"
+      ],
+      "parameters": {
+        "identifier": "C0023467"
+      }
+    },
+    "mgsat": {
+      "description": "Retrieve MGSAT of C0023467 (Acute myeloid leukemia)",
+      "variables": [
+        "identifier",
+        "metaui",
+        "stype",
+        "mgsat_identifier",
+        "mgsat_source",
+        "mgsat_value",
+        "metaui_label"
+      ],
+      "parameters": {
+        "identifier": "C0023467"
+      }
+    },
+    "references": {
+      "description": "Retrieve PMIDs linked from C0023467 (Acute myeloid leukemia)",
+      "variables": [
+        "mengen_cid",
+        "pubmed",
+        "medgen_uid_label"
+      ],
+      "parameters": {
+        "mengen_cid": "medgen:C0023467"
+      }
+    },
+    "issued": "2023-06-05",
+    "modified": null
+  },
+  {
+    "id": "mesh",
+    "endpoint": "https://id.nlm.nih.gov/mesh/sparql",
+    "med2rdf": [
+      "http://sparql.med2rdf.org/sparql",
+      {
+        "graph": [
+          "http://med2rdf.org/graph/mesh"
+        ]
+      }
+    ],
+    "integbio": [
+      "https://integbio.jp/togosite/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/togosite/mesh"
+        ]
+      }
+    ],
+    "title": {
+      "description": "MeSH data model structure"
+    },
+    "website": "https://id.nlm.nih.gov/mesh/",
+    "description": "A linked data representation of the MeSH biomedical vocabulary produced by the National Library of Medicine.",
+    "tags": [
+      "Ontology/ Terminology/Nomenclature"
+    ],
+    "provider": "National Library of Medicine",
+    "creators": [
+      {
+        "name": "National Library of Medicine",
+        "affiliation": null
+      }
+    ],
+    "version": 2025,
+    "issued": "2024-12-05",
+    "license": [
+      {
+        "name": "Creative commons 1.0 Universal (CC0 1.0)",
+        "url": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "credit": "Genebank Project, NARO licensed under CC Atribution 4.0 International License."
+      }
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "mesh": "<http://id.nlm.nih.gov/mesh/>",
+    "meshv": "<http://id.nlm.nih.gov/mesh/vocab#>",
+    "main_subjects": {
+      "description": "A list of selected subjects from the MeSH data model.",
+      "variables": [
+        "Concept",
+        "Term",
+        "Descriptor",
+        "Geographic",
+        "Qualifier",
+        "TreeNumber",
+        "Chemical",
+        "Disease",
+        "Protocol",
+        "Organism"
+      ]
+    },
+    "main_objects": {
+      "description": "A list of selected objects. Other objects will be ommitted from the schema diagram.",
+      "variables": [
+        "concept_label",
+        "concept_id",
+        "term_label",
+        "term_id",
+        "descriptor_label",
+        "descriptor_id",
+        "qualifier_label",
+        "qualifier_id",
+        "tree_number_label"
+      ]
+    },
+    "some_subjects_and_objects": {
+      "description": "A list of subjects and objects which will be drawn on the schema diagram.",
+      "variables": [
+        "Concept",
+        "term_label",
+        "term_id",
+        "descriptor_label",
+        "descriptor_id",
+        "qualifier_label",
+        "qualifier_id",
+        "tree_number_label"
+      ]
+    },
+    "sparql": {
+      "description": "Descriptor -> Concept -> Term, Descriptor -> Qualifier, Descriptor -> Term, Descriptor -> TreeNumber",
+      "variables": [
+        "descriptor_id",
+        "descriptor_label",
+        "concept_id",
+        "concept_label",
+        "term_id",
+        "term_label",
+        "qualifier_id",
+        "qualifier_label",
+        "tree_number_label"
+      ]
+    },
+    "tree_pair": {
+      "variables": [
+        "TreeNumber",
+        "parent_tree_number"
+      ],
+      "parameters": {
+        "parent_tree_number": "mesh:C01"
+      }
+    },
+    "list_qual_for_desc": {
+      "variables": [
+        "AllowedDescriptorQualifierPair",
+        "Qualifier",
+        "qualifier_label"
+      ],
+      "parameters": {
+        "qualifier_active": true,
+        "allowed_descriptor_qualifier_pair_active": true
+      }
+    },
+    "object_variable": {
+      "variables": [
+        "Concept",
+        "concept_label",
+        "concept_preferred_term",
+        "term_label"
+      ]
+    },
+    "object_variable_of_duplicated_subjects": {
+      "variables": [
+        "Concept",
+        "concept_label",
+        "concept_preferred_term",
+        "descriptor_preferred_term",
+        "qualifier_preferred_term",
+        "term_label"
+      ]
+    },
+    "togodx": {
+      "description": "SPARQL for https://integbio.jp/togosite/sparqlist/disease_diseases_mesh",
+      "variables": [
+        "Descriptor",
+        "TreeNumber",
+        "descriptor_label"
+      ]
+    },
+    "issued": "2024-12-05",
+    "modified": null
+  },
+  {
+    "id": "mondo",
+    "endpoint": [
+      "https://integbio.jp/togosite/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/togosite/mondo"
+        ]
+      }
+    ],
+    "oboinowl": "<http://www.geneontology.org/formats/oboInOwl#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "sparql": {
+      "description": "SPARQL test, Get ladfs:label,rdfs:subClassof",
+      "variables": [
+        "label",
+        "sub_class"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "mp",
+    "endpoint": [
+      "https://rdfportal.org/bioportal/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/bioportal/mp"
+        ]
+      }
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "oboinowl": "<http://www.geneontology.org/formats/oboInOwl#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "metadata": "<http://data.bioontology.org/metadata/>",
+    "labels": {
+      "description": "List the pairs of MP ID and its label",
+      "variables": [
+        "id",
+        "label"
+      ],
+      "options": {
+        "distinct": true
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "nadd",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://purl.jp/bio/18/nadd/"
+        ]
+      }
+    ],
+    "title": "Nucleic Acid Drug Database",
+    "website": "https://medals.jp/edrugnainfo.html",
+    "description": "DB is focused on nucleic acid drugs known as biopharmaceuticals and displayed approval drugs and information on three phases of clinical trial stage.",
+    "tags": [
+      "Drug/Chemical",
+      "RNA",
+      "Sequence",
+      "Structure",
+      "Journal article/Report/Bibliography"
+    ],
+    "provider": "Molecular Profiling Research Center for Drug Discovery (molprof), The National Institute of Advanced Industrial Science and Technology (AIST)",
+    "creators": [
+      {
+        "name": "Kazuhiko Fukui",
+        "affiliation": "Molecular Profiling Research Center for Drug Discovery (molprof), The National Institute of Advanced Industrial Science and Technology (AIST)"
+      },
+      {
+        "name": "Takayuki Amemiya",
+        "affiliation": "Molecular Profiling Research Center for Drug Discovery (molprof), The National Institute of Advanced Industrial Science and Technology (AIST)"
+      },
+      {
+        "name": "Hiroshi Kouno",
+        "affiliation": "Molecular Profiling Research Center for Drug Discovery (molprof), The National Institute of Advanced Industrial Science and Technology (AIST)/Department of Applied Biological Science, Faculty of Science and Technology, Tokyo University of Science"
+      }
+    ],
+    "version": "2019-05-14",
+    "issued": "2019-05-14",
+    "licenses": [
+      "Attribution-ShareAlike 2.1 Japan (CC BY-SA 2.1)"
+    ],
+    "ncit": "<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>",
+    "uatc": "<http://purl.bioontology.org/ontology/UATC/>",
+    "nadd": "<http://purl.jp/bio/18/nadd/>",
+    "innovation": "<http://purl.org/innovation/>",
+    "uniprot": "<http://purl.uniprot.org/uniprot/>",
+    "jst": "<http://vocab.jst.go.jp/terms/sti#>",
+    "wikidata": "<https://identifiers.org/wikidata/>",
+    "pdbr": "<https://rdf.wwpdb.org/pdb/>",
+    "clinicaltrial": "<https://www.clinicaltrialsregister.eu/ctr-search/trial/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "drugbank": "<http://bio2rdf.org/drugbank:>",
+    "rxlist": "<http://www.rxlist.com/>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Naddentry"
+      ]
+    },
+    "issued": "2019-05-14",
+    "modified": null
+  },
+  {
+    "id": "nando",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://nanbyodata.jp/ontology/nando"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "https://togodx.dbcls.jp/human/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/togosite/nando"
+        ]
+      }
+    ],
+    "title": "NANDO",
+    "website": "https://nanbyodata.jp/",
+    "description": "NANDOは指定難病制度および小児慢性特定疾病制度を対象に、難病名を体系的かつ網羅的に整理した語彙集です。NANDOの各疾患は、国際的に多くのデータベースやシステムで採用されている疾患語彙集Mondo（Monarch Disease Ontology）と紐づけられており、OMIMやOrphanetといった国外の主要疾患データベースとの連携が可能です。",
+    "tags": [
+      "Health/Disease",
+      "Tag sequence (nucleic acid)",
+      "Ontology/ Terminology/Nomenclature"
+    ],
+    "provider": null,
+    "creators": [
+      {
+        "name": "仁宮 洸太",
+        "affiliation": "東京大学薬学系研究科，国立保健医療科学院"
+      },
+      {
+        "name": "高月 照江",
+        "affiliation": "大学共同利用機関法人 情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター"
+      },
+      {
+        "name": "申 在紋",
+        "affiliation": "大学共同利用機関法人 情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター"
+      },
+      {
+        "name": "山本 泰智",
+        "affiliation": "大学共同利用機関法人 情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター"
+      },
+      {
+        "name": "片山 俊明",
+        "affiliation": "大学共同利用機関法人 情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター"
+      },
+      {
+        "name": "桝屋 啓志",
+        "affiliation": "理化学研究所 バイオリソース研究センター 統合情報開発室"
+      },
+      {
+        "name": "川島 秀一",
+        "affiliation": "大学共同利用機関法人 情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター"
+      },
+      {
+        "name": "荻島 創一",
+        "affiliation": "東北大学 高等研究機構 未来型医療創成センター"
+      },
+      {
+        "name": "菊池 敦生",
+        "affiliation": "東北大学 大学院医学系研究科"
+      },
+      {
+        "name": "藤原 豊史",
+        "affiliation": "大学共同利用機関法人 情報・システム研究機構 データサイエンス共同利用基盤施設 ライフサイエンス統合データベースセンター"
+      }
+    ],
+    "version": "2024-11-21",
+    "issued": "2024-11-21",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0) Database Center for Life Science"
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "nando": "<http://nanbyodata.jp/ontology/NANDO_>",
+    "mondo": "<http://purl.obolibrary.org/obo/MONDO_>",
+    "sparql": {
+      "description": "SPARQL test, Get ladfs:label",
+      "variables": [
+        "nando_id",
+        "label_ja",
+        "label_en",
+        "label_hira"
+      ]
+    },
+    "refex_entry": {
+      "output_dir": "stanza",
+      "label": "RefEx entry",
+      "definition": "Stanza for RefEx entry",
+      "sparql": "stanza_sparql",
+      "parameters": {
+        "refex_id": {
+          "example": "RFX0000062273",
+          "description": "RefEx identifier",
+          "required": true
+        }
+      }
+    },
+    "issued": "2024-11-21",
+    "modified": null
+  },
+  {
+    "id": "naro_genebank",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/naro_genebank"
+        ]
+      }
+    ],
+    "title": "NAROジーンバンク微生物バイオリソースデータセット",
+    "website": "https://www.gene.affrc.go.jp/",
+    "description": "農研機構農業生物資源ジーンバンクが維持・管理・分譲している食料・農業に係る微生物遺伝資源のデータセット",
+    "tags": [
+      "Organism",
+      "Bioresource"
+    ],
+    "provider": "国立研究開発法人 農業・食品産業技術総合研究機構　遺伝資源研究センター",
+    "creators": [
+      {
+        "name": "田中 剛",
+        "affiliation": "農研機構高度分析研究センター"
+      },
+      {
+        "name": "田中 聡",
+        "affiliation": "トランジット株式会社"
+      }
+    ],
+    "version": null,
+    "issued": "2023-08-23",
+    "license": [
+      {
+        "name": "Creative commons Attribution 4.0 International (CC BY 4.0)"
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "credit": "Genebank Project, NARO licensed under CC 表示 - 継承 4.0 国際"
+      }
+    ],
+    "issued": "2023-08-23",
+    "modified": null
+  },
+  {
+    "id": "nbrc",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://purl.jp/bio/103/nite/culture/"
+        ]
+      }
+    ],
+    "title": "Dataset of NBRC bioresource",
+    "website": "https://www.nite.go.jp/en/index.html",
+    "description": "Dataset of NBRC bioresource is a dataset for microbes which are maintained, managed and provided from NBRC (NITE Biological Resource Center).",
+    "tags": [
+      "Organism",
+      "Cell",
+      "Bioresource"
+    ],
+    "provider": "National Institute of Technology and Evaluation",
+    "creators": [
+      {
+        "name": "Masami Namihira",
+        "affiliation": "National Institute of Technology and Evaluation"
+      },
+      {
+        "name": "Yuko Kitahashi",
+        "affiliation": "National Institute of Technology and Evaluation"
+      },
+      {
+        "name": "Natsuko Ichikawa",
+        "affiliation": "National Institute of Technology and Evaluation"
+      }
+    ],
+    "version": "release_20190823",
+    "issued": "2019-08-23",
+    "licenses": [
+      "Creative Commons Attribution-ShareAlike 2.1 Japan (CC BY-SA 2.1 JP)",
+      "Dataset of NBRC bioresource (C) NITE NBRC licensed under CC Attribution-ShareAlike 2.1 Japan"
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "pubmed": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "taxonomy": "<http://identifiers.org/taxonomy/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "mccv": "<http://purl.jp/bio/10/mccv#>",
+    "meo": "<http://purl.jp/bio/11/meo/>",
+    "mpo": "<http://purl.jp/bio/10/mpo/>",
+    "nbrc": {
+      "output_dir": "stanza",
+      "label": "NBRC",
+      "definition": "NBRC",
+      "sparql": "stanza_sparql",
+      "parameters": {
+        "refex_id": {
+          "example": "NBRC_00012843",
+          "description": "NBRC identifier",
+          "required": true
+        }
+      }
+    },
+    "sparql": {
+      "description": "Obtain taxonomy ID and preferred label of a bioresource",
+      "variables": [
+        "nbrc_id",
+        "clade",
+        "name",
+        "alias",
+        "taxid",
+        "attribute",
+        "habitat"
+      ],
+      "parameters": {
+        "nbrc_id": "NBRC_00100650",
+        "attribute": "meo:MEO_0000198"
+      }
+    },
+    "stanza_sparql": {
+      "description": "NBRC bioresource is a dataset for microbes which are maintained, managed and provided from NBRC",
+      "variables": [
+        "clade",
+        "name",
+        "alias",
+        "taxid",
+        "xref"
+      ],
+      "parameters": {
+        "nbrc_id": "NBRC_00100650"
+      }
+    },
+    "test_sparql": {
+      "variables": [
+        "Culture",
+        "habitat",
+        "location"
+      ]
+    },
+    "issued": "2019-08-23",
+    "modified": null
+  },
+  {
+    "id": "ncbigene",
+    "endpoint": [
+      "https://togodx.dbcls.jp/human/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/togosite/homo_sapiens_gene_info"
+        ]
+      }
+    ],
+    "title": "NCBI Gene RDF",
+    "website": "https://www.ncbi.nlm.nih.gov/gene/",
+    "description": "NCBI Gene RDFは、NCBI GeneのデータをRDFに変換したものです。",
+    "tags": [
+      "Gene"
+    ],
+    "provider": "National Center for Biotechnology Information",
+    "creators": [
+      {
+        "name": "千葉 啓和",
+        "affiliation": "ライフサイエンス統合データベースセンター"
+      }
+    ],
+    "version": "release_20230525",
+    "issued": "2022-05-25",
+    "licenses": [
+      "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+    ],
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "ncbigene": "<http://identifiers.org/ncbigene/>",
+    "taxid": "<http://identifiers.org/taxonomy/>",
+    "hgnc": "<http://identifiers.org/hgnc/>",
+    "mim": "<http://identifiers.org/mim/>",
+    "mirbase": "<http://identifiers.org/mirbase/>",
+    "ensembl": "<http://identifiers.org/ensembl/>",
+    "insdc": "<http://ddbj.nig.ac.jp/ontologies/nucleotide/>",
+    "ncbio": "<https://dbcls.github.io/ncbigene-rdf/ontology.ttl#>",
+    "sparql": {
+      "description": "Get gene info",
+      "variables": [
+        "type_of_gene",
+        "label",
+        "gene_description"
+      ]
+    },
+    "issued": "2022-05-25",
+    "modified": null
+  },
+  {
+    "id": "ncgm",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "hco": "<http://biohackathon.org/resource/hco/>",
+    "ncgm": "<http://purl.jp/bio/ncgm/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "med2rdf": "<http://med2rdf.org/ontology/med2rdf#>",
+    "gvo": "<http://genome-variation.org/resource/gvo#>",
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "ncit",
+    "endpoint": [
+      "https://rdfportal.org/bioportal/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/bioportal/ncit"
+        ]
+      }
+    ],
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "oboinowl": "<http://www.geneontology.org/formats/oboInOwl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "ncit": "<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>",
+    "labels": {
+      "description": "List the pairs of ID and its label",
+      "variables": [
+        "id",
+        "label"
+      ],
+      "options": {
+        "distinct": true
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "nextprot",
+    "endpoint": [
+      "https://integbio.jp/togosite/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/togosite/nextprot"
+        ]
+      }
+    ],
+    "nxp": "<http://nextprot.org/rdf#>",
+    "nxp_annotation": "<http://nextprot.org/rdf/annotation/>",
+    "nxp_db": "<http://nextprot.org/rdf/db/>",
+    "nxp_entry": "<http://nextprot.org/rdf/entry/>",
+    "nxp_gene": "<http://nextprot.org/rdf/gene/>",
+    "nxp_iso": "<http://nextprot.org/rdf/isoform/>",
+    "nxp_pub": "<http://nextprot.org/rdf/publication/>",
+    "nxp_term": "<http://nextprot.org/rdf/terminology/>",
+    "npx_evidence": "<http://nextprot.org/rdf/evidence/>",
+    "npx_source": "<http://nextprot.org/rdf/source/>",
+    "uniprot": "<http://purl.uniprot.org/uniprot/>",
+    "up_page": "<http://www.uniprot.org/uniprot/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "isoform": {
+      "description": "isoform list",
+      "variables": [
+        "Nextprot",
+        "ensembl_gene",
+        "isoform"
+      ]
+    },
+    "modification": {
+      "description": "PTM",
+      "variables": [
+        "Nextprot",
+        "modified_residue_comment"
+      ]
+    },
+    "disease": {
+      "description": "isoform related disease",
+      "parameters": {
+        "disease_isoform_specificity": "<http://nextprot.org/rdf#SPECIFIC>"
+      },
+      "variables": [
+        "isoform",
+        "disease_label"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "nikkaji",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/nikkaji/main",
+          "http://rdf.integbio.jp/dataset/nikkaji/inchi",
+          "http://rdf.integbio.jp/dataset/nikkaji/canonical_smiles",
+          "http://rdf.integbio.jp/dataset/nikkaji/link2jglobal",
+          "http://rdf.integbio.jp/dataset/nikkaji/mwmf",
+          "http://rdf.integbio.jp/dataset/nikkaji/link2jglobal_basedon_unichem",
+          "http://rdf.integbio.jp/dataset/nikkaji/link2jglobal_basedon_pubchem",
+          "http://rdf.integbio.jp/dataset/nikkaji/core"
+        ]
+      }
+    ],
+    "title": "Nikkaji RDF",
+    "website": "http://dbarchive.biosciencedbc.jp/en/nikkaji/desc.html",
+    "description": "NBDC NikkajiRDF is RDF data of Japan Chemical Substance Dictionary (Nikkaji), which is one of the largest chemical substance databases in Japan.",
+    "tags": [
+      "Drug/Chemical",
+      "Others",
+      "Structure",
+      "Image/Movie"
+    ],
+    "provider": "Japan Science and Technology Agency (JST)",
+    "creators": "Japan Science and Technology Agency (JST)",
+    "version": "2017-01-12",
+    "issued": "2017-01-12",
+    "licenses": [
+      "Creative Commons Attribution 2.1 Japan (CC BY 2.1 JP)",
+      "NBDC NikkajiRDF © Japan Science and Technology Agency licensed under CC Attribution 2.1 Japan"
+    ],
+    "atlas": "<http://www.ebi.ac.uk/gxa/query?conditionQuery=>",
+    "b2rdrugb": "<http://bio2rdf.org/drugbank:DB>",
+    "b2rhmdb": "<http://bio2rdf.org/hmdb:>",
+    "b2rkegg": "<http://bio2rdf.org/kegg:>",
+    "b2rpcc": "<http://bio2rdf.org/pubchem.compound:>",
+    "b2rpcs": "<http://bio2rdf.org/pubchem.substance:>",
+    "b2rpkb": "<http://bio2rdf.org/pharmgkb:>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "chebi": "<http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A>",
+    "chembl": "<https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL>",
+    "cheminf": "<http://semanticscience.org/resource/>",
+    "crossref": "<http://example.org/test/crossref/>",
+    "dbpo": "<http://dbpedia.org/ontology/>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "dcat": "<http://www.w3.org/ns/dcat#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "drugb": "<http://www.drugbank.ca/drugs/DB>",
+    "emol": "<https://www.emolecules.com/cgi-bin/more?vid=>",
+    "fdasrs": "<http://fdasis.nlm.nih.gov/srs/ProxyServlet?mergeData=true&objectHandle=DBMaint&APPLICATION_NAME=fdasrs&actionHandle=default&nextPage=jsp/srs/ResultScreen.jsp&TXTSUPERLISTID=>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "glycan": "<http://rdf.glycoinfo.org/glycan/>",
+    "gtopdb": "<http://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=>",
+    "hmdb": "<http://www.hmdb.ca/metabolites/>",
+    "ibm": "<http://www-935.ibm.com/services/us/gbs/bao/siip/nih/?sid=>",
+    "idchebi": "<http://identifiers.org/chebi/CHEBI:>",
+    "idchembl": "<http://identifiers.org/chembl.compound/CHEMBL>",
+    "iddrugb": "<http://identifiers.org/drugbank/DB>",
+    "idhmdb": "<http://identifiers.org/hmdb/>",
+    "idkeggc": "<http://identifiers.org/kegg.compound/>",
+    "idpcc": "<http://identifiers.org/pubchem.compound/>",
+    "idpcs": "<http://identifiers.org/pubchem.substance/>",
+    "idpdb": "<http://identifiers.org/pdb-ccd/>",
+    "idpkb": "<http://identifiers.org/pharmgkb.drug/>",
+    "idzinc": "<http://identifiers.org/zinc/>",
+    "inchi": "<http://glyconavi.org/inchi/>",
+    "jglobal": "<http://stirdf.jst.go.jp/id/>",
+    "jst": "<http://vocab.jst.go.jp/terms/sti#>",
+    "jstd": "<http://vocab.jst.go.jp/terms/vlist#>",
+    "jstpat": "<http://vocab.jst.go.jp/terms/patent#>",
+    "keggbget": "<http://www.genome.jp/dbget-bin/www_bget?>",
+    "ndl": "<http://ndl.go.jp/dcndl/terms/>",
+    "nikkaji": "<http://stirdf.jst.go.jp/cde/nikkaji/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "obochebi": "<http://purl.obolibrary.org/obo/CHEBI_>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "pav": "<http://purl.org/pav/>",
+    "pcc": "<http://pubchem.ncbi.nlm.nih.gov/compound/>",
+    "pcdotf": "<http://pubchem.ncbi.nlm.nih.gov/substance/>",
+    "pcs": "<http://pubchem.ncbi.nlm.nih.gov/substance/>",
+    "pcscid": "<http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=>",
+    "pcssid": "<http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?sid=>",
+    "pdbe": "<http://www.ebi.ac.uk/pdbe-srv/pdbechem/chemicalCompound/show/>",
+    "pdbj": "<http://pdbj.org/chemie/summary/>",
+    "pkb": "<http://www.pharmgkb.org/drug/>",
+    "prism": "<http://prismstandard.org/namespaces/basic/2.0/>",
+    "rchembl": "<http://rdf.ebi.ac.uk/resource/chembl/molecule/CHEMBL>",
+    "rcsb": "<http://ligand-expo.rcsb.org/pyapps/ldHandler.py?formid=cc-index-search&operation=ccid&target=>",
+    "rda": "<http://rdvocab.info/ElementsGr2/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "rpccid": "<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID>",
+    "rpcsid": "<http://rdf.ncbi.nlm.nih.gov/pubchem/substance/SID>",
+    "rpdb": "<http://rdf.wwpdb.org/cc/>",
+    "schema": "<http://schema.org/>",
+    "schembl": "<https://www.surechembl.org/chemical/>",
+    "semanticscience": "<http://semanticscience.org/resource/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "ssc": "<http://semanticscience.org/resource/>",
+    "tl": "<http://purl.org/NET/c4dm/timeline.owl#>",
+    "vcard": "<http://www.w3.org/2006/vcard/ns#>",
+    "void": "<http://rdfs.org/ns/void#>",
+    "xl": "<http://www.w3.org/2008/05/skos-xl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "zinc": "<http://zinc.docking.org/substance/>",
+    "sparql": {
+      "decription": "systematic name and chemical formula for caffeine",
+      "variables": [
+        "nikkaji_number",
+        "label",
+        "systematic_name",
+        "chem_formula"
+      ],
+      "parameters": {
+        "nikkaji_number": "J2.330B"
+      }
+    },
+    "sparql2": {
+      "decription": "systematic name and chemical formula for caffeine",
+      "variables": [
+        "nikkaji_number",
+        "label",
+        "systematic_name",
+        "chem_formula"
+      ],
+      "parameters": {
+        "label": "\"カフェイン\"@ja"
+      }
+    },
+    "sparql3": {
+      "decription": "component nikkaji id  for caffeine hydrate",
+      "variables": [
+        "nikkaji_number",
+        "label",
+        "component_nikkaji_id"
+      ],
+      "parameters": {
+        "nikkaji_number": "J244.705C"
+      }
+    },
+    "nikkaji_entry": {
+      "output_dir": "stanza",
+      "label": "Nikkaji entry",
+      "definition": "Name and Chemical formula for Nikkaji Entry",
+      "sparql": "sparql",
+      "parameters": {
+        "nikkaji_number": {
+          "example": "J2.330B",
+          "description": "Nikkaji number",
+          "required": true
+        }
+      }
+    },
+    "issued": "2017-01-12",
+    "modified": null
+  },
+  {
+    "id": "nlm-catalog",
+    "endpoint": [
+      "https://rdfportal.org/ncbi/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/nlm_catalog"
+        ]
+      }
+    ],
+    "title": "NLM Catalog",
+    "website": "https://www.ncbi.nlm.nih.gov/nlmcatalog/",
+    "description": "雑誌、書籍、視聴覚資料、コンピュータ・ソフトウェア、電子リソース、その他の資料に関するNLM書誌データ",
+    "tags": [
+      "Ontology/Terminology/Nomenclature",
+      "Journal article/Report/Bibliography"
+    ],
+    "provider": "ライフサイエンス統合データベースセンター",
+    "creators": [
+      {
+        "name": "川島秀一",
+        "affiliation": "ライフサイエンス統合データベースセンター"
+      }
+    ],
+    "version": null,
+    "issued": "2023-05-08",
+    "license": [
+      {
+        "name": null
+      },
+      {
+        "url": null
+      },
+      {
+        "credit": null
+      }
+    ],
+    "nlmcatalog": "<http://www.ncbi.nlm.nih.gov/nlmcatalog/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "prism": "<http://prismstandard.org/namespaces/1.2/basic/>",
+    "fabio": "<http://purl.org/spar/fabio/>",
+    "issued": "2023-05-08",
+    "modified": null
+  },
+  {
+    "id": "oma",
+    "endpoint": [
+      "https://sparql.omabrowser.org/sparql/",
+      {
+        "graph": [
+          "http://omabrowser.org/graph"
+        ]
+      }
+    ],
+    "title": "Orthologous MAtrix (OMA) RDF",
+    "website": "https://omabrowser.org",
+    "description": "The OMA (Orthologous MAtrix) project is a method and database for the inference of orthologs among complete genomes. The OMA RDF is a view of the OMA database in RDF.",
+    "tags": [
+      "Genome",
+      "Gene",
+      "Phylogeny/Classification"
+    ],
+    "provider": "SIB Swiss Institute of Bioinformatics",
+    "creators": [
+      {
+        "name": "Adrian M. Altenhoff",
+        "affiliation": "SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Christophe Dessimoz",
+        "affiliation": "SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Tarcisio Mendes de Farias",
+        "affiliation": "SIB Swiss Institute of Bioinformatics"
+      }
+    ],
+    "version": "Jul2023",
+    "issued": "2023-07-01",
+    "licenses": [
+      "Creative Commons Attribution 4.0 International"
+    ],
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "orth": "<http://purl.org/net/orth#>",
+    "oma": "<http://omabrowser.org/ontology/oma#>",
+    "omahog": "<https://omabrowser.org/oma/hog/resolve/HOG:>",
+    "omainfo": "<https://omabrowser.org/oma/info/>",
+    "omagenome": "<https://omabrowser.org/oma/genome/>",
+    "omacurrent": "<https://omabrowser.org/oma/current/#>",
+    "protein": "<https://www.ncbi.nlm.nih.gov/protein/>",
+    "tax": "<http://purl.uniprot.org/taxonomy/>",
+    "uniprot": "<http://purl.uniprot.org/uniprot/>",
+    "lscr": "<http://purl.org/lscr#>",
+    "sparql": {
+      "description": "Get ortholog cluster members",
+      "variables": [
+        "cluster_id",
+        "protein_id"
+      ]
+    },
+    "issued": "2023-07-01",
+    "modified": null
+  },
+  {
+    "id": "opentggates",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/open-tggates"
+        ]
+      }
+    ],
+    "title": "Open TG-GATEs",
+    "website": "http://toxico.nibiohn.go.jp/english/index.html",
+    "description": "Open TG-GATEs is a public toxicogenomics database",
+    "tags": [
+      "Gene",
+      "Drug/Chemical",
+      "Health/Disease",
+      "Gene expression"
+    ],
+    "provider": "National Institutes of Biomedical Innovation, Health and Nutrition",
+    "creators": [
+      {
+        "name": "Yoshinobu Igarashi",
+        "affiliation": "National Institutes of Biomedical Innovation, Health and Nutrition"
+      },
+      {
+        "name": "Shuichi Kawashima",
+        "affiliation": "Research Organization of Information and Systems Database Center for Life ScienceDatabase Center for Life Science"
+      },
+      {
+        "name": "Daisuke Satoh",
+        "affiliation": "Level Five Co., Ltd."
+      },
+      {
+        "name": "Maori Ito",
+        "affiliation": "Pharmaceuticals and Medical Devices Agency"
+      },
+      {
+        "name": "Chioko Nagao",
+        "affiliation": "National Institutes of Biomedical Innovation, Health and Nutrition"
+      },
+      {
+        "name": "Kenji Mizuguchi",
+        "affiliation": "National Institutes of Biomedical Innovation, Health and Nutrition"
+      }
+    ],
+    "version": "2017-03-17",
+    "issued": "2017-03-17",
+    "licenses": [
+      "http://toxico.nibiohn.go.jp/english/agreement.html"
+    ],
+    "affymetrix": "<http://bio2rdf.org/affymetrix:>",
+    "taxonomy": "<http://identifiers.org/taxonomy/>",
+    "probe": "<http://purl.jp/bio/101/opentggates/Probe/>",
+    "array": "<http://purl.jp/bio/101/opentggates/Array/>",
+    "chip": "<http://purl.jp/bio/101/opentggates/Chip/>",
+    "unitset": "<http://purl.jp/bio/101/opentggates/UnitSet/>",
+    "unitsetprofile": "<http://purl.jp/bio/101/opentggates/UnitSetProfile/>",
+    "experimentset": "<http://purl.jp/bio/101/opentggates/ExperimentSet/>",
+    "condition": "<http://purl.jp/bio/101/opentggates/ExperimentalCondition/>",
+    "sample": "<http://purl.jp/bio/101/opentggates/Sample/>",
+    "animal": "<http://purl.jp/bio/101/opentggates/IndividualAnimal/>",
+    "compound": "<http://purl.jp/bio/101/opentggates/ChemicalCompound/>",
+    "pathology": "<http://purl.jp/bio/101/opentggates/Pathology/>",
+    "grade": "<http://purl.jp/bio/101/opentggates/PathologicalGrade/>",
+    "findings": "<http://purl.jp/bio/101/opentggates/PathologicalFindings/>",
+    "topography": "<http://purl.jp/bio/101/opentggates/PathologicalTopography/",
+    "ontology": "<http://purl.jp/bio/101/opentggates/ontology/>",
+    "slide": "<http://virtualslide.nibiohn.go.jp/Authenticate3.php?image_id=>",
+    "uniprot": "<http://purl.uniprot.org/uniprot/>",
+    "pubchem": "<http://identifiers.org/pubchem.compound/>",
+    "kegg": "<http://identifiers.org/kegg.drug/>",
+    "cas": "<http://identifiers.org/cas/>",
+    "taxon": "<http://identifiers.org/taxonomy/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "ncit": "<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "ProbeEntry",
+        "ChipEntry"
+      ]
+    },
+    "issued": "2017-03-17",
+    "modified": null
+  },
+  {
+    "id": "paconto",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://jcggdb.jp/rdf/diseases/paconto",
+          "http://jcggdb.jp/rdf/diseases/paconto-schema.rdf"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "https://sparql.glycoinfo.org/sparql"
+    ],
+    "title": "PAConto",
+    "website": "http://acgg.asia/db/diseases/",
+    "description": "PAConto is the RDF representation of PACDB (Pathogen Adherence to Carbohydrate Database) data and Ontology of Infectious Diseases known to be related to Glycan Binding. PACDB was developed by the Research Center for Medical Glycoscience (RCMG, AIST) and released in March 2010. At the present time PACDB provides information on about 370 strains of 120 microorganisms, and about 1,700 lectin-glycan interactions of two types: binding and not binding. Also, the PACDB provides information on about 100 infectious diseases in which the interaction between adherence molecules of pathogens and glycan ligands of the host cells plays an important role in the disease pathogenesis. All of the information for the creation of this database was obtained from scientific articles.\n",
+    "tags": [
+      "Other biomolecule",
+      "Health/Disease",
+      "Interaction/Pathway",
+      "Structure"
+    ],
+    "provider": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)",
+    "creators": [
+      {
+        "name": "Hisashi Narimatsu",
+        "affiliation": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)"
+      },
+      {
+        "name": "Toshihide Shikanai",
+        "affiliation": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)"
+      },
+      {
+        "name": "Elena Solovieva",
+        "affiliation": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)"
+      },
+      {
+        "name": "Noriaki Fujita",
+        "affiliation": "Glycoscience and Glycotechnology Research Group, Biotechnology Research Institute for Drug Discovery, National Institute of Advanced Industrial Science and Technology (AIST)"
+      }
+    ],
+    "version": "v.1.0",
+    "issued": "2016-06-01",
+    "licenses": [
+      "Attribution NonCommercial ShareAlike 2.1 Japan (CC BY-NC-SA 2.1)"
+    ],
+    "mesh": "<http://id.nlm.nih.gov/mesh/>",
+    "gdgsch": "<http://jcggdb.jp/rdf/diseases/gdgdb-schema#>",
+    "ggdsch": "<http://jcggdb.jp/rdf/diseases/ggdonto-schema#>",
+    "gmsch": "<http://jcggdb.jp/rdf/diseases/gmncbi-schema#>",
+    "paconto": "<http://jcggdb.jp/rdf/diseases/paconto#>",
+    "pacsch": "<http://jcggdb.jp/rdf/diseases/paconto-schema#>",
+    "glycan": "<http://purl.jp/bio/12/glyco/glycan#>",
+    "up": "<http://purl.uniprot.org/core/>",
+    "taxo": "<http://purl.uniprot.org/taxonomy/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "ncit": "<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Diseaseconcept",
+        "concept_type",
+        "upec",
+        "ecoli",
+        "diseases_classification_systems",
+        "concept_type",
+        "pacdb_diseases",
+        "concept_type",
+        "organism_form",
+        "tropism_in_reference",
+        "target_tissues_and_cells",
+        "target_classification",
+        "concept_type",
+        "diseasespacdb",
+        "Diseaseclassconcepttype",
+        "targets_classification",
+        "conceptpathogenic"
+      ]
+    },
+    "issued": "2016-06-01",
+    "modified": null
+  },
+  {
+    "id": "pdb",
+    "endpoint": [
+      "https://rdfportal.org/pdb/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/pdbj",
+          "http://rdf.wwpdb.org/schema/pdbx-v50.owl"
+        ]
+      }
+    ],
+    "title": "RefEx RDF",
+    "website": "http://refex.dbcls.jp/index.php?lang=ja",
+    "description": "RDFized reference gene expresson dataset derived from CAGE and GeneChip experiments in the RefEx database.",
+    "tags": [
+      "Gene",
+      "Tag sequence (nucleic acid)",
+      "Gene expression"
+    ],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Shuichi Kawahsima",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Hiromasa Ono",
+        "affiliation": "Database Center for Life Science"
+      }
+    ],
+    "version": "2017-04-07",
+    "issued": "2017-04-07",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0) Database Center for Life Science"
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "xsi": "<http://www.w3.org/2001/XMLSchema-instance>",
+    "pdbx": "<http://pdbml.pdb.org/schema/pdbx-v50.xsd>",
+    "pdbo": "<https://rdf.wwpdb.org/schema/pdbx-v50.owl#>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "pdb": "<https://rdf.wwpdb.org/pdb/>",
+    "sparql": {
+      "description": "Reference UniProt",
+      "variables": [
+        "pdb_id",
+        "entity",
+        "entity_id",
+        "uniprot",
+        "align_begin",
+        "oligomeric_count"
+      ]
+    },
+    "experiment": {
+      "description": "Experimental method",
+      "variables": [
+        "pdb_id",
+        "experimental_method"
+      ]
+    },
+    "helicies": {
+      "description": "Helix list in a polypeptide chain",
+      "variables": [
+        "entity",
+        "entity_id",
+        "uniprot",
+        "conformation",
+        "conf_id"
+      ],
+      "parameters": {
+        "pdb_id": "5KE7",
+        "chain_id": "A",
+        "conf_begin_chain_id": "A",
+        "conf_type": "HELX_P"
+      }
+    },
+    "sheet_strands": {
+      "description": "Sheet strand list in a polypeptide chain",
+      "variables": [
+        "entity",
+        "entity_id",
+        "uniprot",
+        "sheet",
+        "sheet_strand",
+        "sheet_id",
+        "sheet_strand_id"
+      ],
+      "parameters": {
+        "pdb_id": "5KE7",
+        "chain_id": "A",
+        "sheet_strand_begin_chain_id": "A"
+      }
+    },
+    "refex_entry_stanza": {
+      "output_dir": "stanza",
+      "label": "RefEx entry",
+      "definition": "Stanza for RefEx entry",
+      "sparql": "stanza_sparql",
+      "parameters": {
+        "refex_id": {
+          "example": "RFX0000062273",
+          "description": "RefEx identifier",
+          "required": true
+        }
+      }
+    },
+    "issued": "2017-04-07",
+    "modified": null
+  },
+  {
+    "id": "pgdbj",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://pgdbj.jp/od/",
+          "http://purl.jp/bio/11/orth#"
+        ]
+      }
+    ],
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "void": "<http://rdfs.org/ns/void#>",
+    "pav": "<http://purl.org/pav/>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "orth": "<http://purl.jp/bio/11/orth#>",
+    "up": "<http://purl.uniprot.org/core/>",
+    "protid": "<http://identifiers.org/ncbiprotein/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "dctype": "<http://purl.org/dc/dcmitype/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "ogo": "<http://miuras.inf.um.es/ontologies/OGO.owl#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "sparql": {
+      "description": "Get orthologs of a given RefSeq ID.",
+      "variables": [
+        "protid"
+      ],
+      "parameters": {
+        "dataset": "protid:NP_563687.1"
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "polyinfo",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/polyinfo"
+        ]
+      }
+    ],
+    "title": "PolyInfo 生分解連携",
+    "website": "https://polymer.nims.go.jp/",
+    "description": "NIMS高分子データベースPoLyInfoーバイオ連携プロジェクト、合成高分子の生分解IDと連携スキーマの定義",
+    "tags": [
+      "Drug/Chemical"
+    ],
+    "provider": "国立研究開発法人物質・材料研究機構",
+    "creators": [
+      {
+        "name": "石井 真史",
+        "affiliation": "国立研究開発法人物質・材料研究機構"
+      }
+    ],
+    "version": 0.2,
+    "issued": "2020-02-06",
+    "license": [
+      {
+        "name": "Creative Commons BY 4.0 International (CC BY 4.0)"
+      },
+      {
+        "url": "https://creativecommons.org/licenses/by/4.0/deed.ja"
+      },
+      {
+        "credit": "CC BY 4.0 by National Institute for Materials Science (NIMS), Japan"
+      }
+    ],
+    "biodg": "<http://dice.nims.go.jp/ontology/polymer-bio-ont/Biodeg#>",
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "homo": "<http://dice.nims.go.jp/ontology/PoLyInfo-ont/polyinfo-rdf/Homopolymer#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "pobi": "<http://dice.nims.go.jp/ontology/polymer-bio-ont/Schema#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "ref": "<http://dice.nims.go.jp/ontology/polymer-bio-ont/Reference#>",
+    "taxonomy": "<http://identifiers.org/taxonomy/>",
+    "wdt": "<http://dice.nims.go.jp/ontology/polymer-bio-ont/Property#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "prism": "<http://prismstandard.org/namespaces/basic/2.0/>",
+    "cu": "<http://dice.nims.go.jp/ontology/PoLyInfo-ont/polyinfo-rdf/ConstitutionalUnit#>",
+    "pli": "<http://dice.nims.go.jp/ontology/PoLyInfo-ont/Schema#>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "sparql": {
+      "description": "NIMS polymer database PoLyInfo-Bio Linkage Project, Definition of biodegradation IDs and linking schemas for synthetic polymers",
+      "variables": [
+        "BioDegradation",
+        "bio_degradation_label",
+        "has_participant",
+        "bio_degradation_id",
+        "bio_degradation_ref",
+        "Homopolymer",
+        "homopolymer_label",
+        "homopolymer_id",
+        "constitutional_unit",
+        "abbreviation",
+        "japanese_name",
+        "monomer_based_name",
+        "other_name",
+        "structure_based_name",
+        "ConstitutionalUnit",
+        "molecular_formula",
+        "molecular_weight",
+        "reaction_formula",
+        "smiles",
+        "constitutional_unit_id",
+        "MolecularFormula",
+        "MolecularWeight"
+      ]
+    },
+    "sparql2": {
+      "description": "NIMS polymer database PoLyInfo-Bio Linkage Project, Definition of biodegradation IDs and linking schemas for synthetic polymers",
+      "variables": [
+        "BioDegradation",
+        "bio_degradation_label",
+        "bio_degradation_id",
+        "has_participant",
+        "bio_degradation_id",
+        "bio_degradation_ref",
+        "Homopolymer",
+        "homopolymer_id",
+        "abbreviation"
+      ]
+    },
+    "issued": "2020-02-06",
+    "modified": null
+  },
+  {
+    "id": "pubcasefinder",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "https://pubcasefinder.dbcls.jp/rdf"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "https://pubcasefinder-rdf.dbcls.jp/sparql",
+      {
+        "graph": [
+          "https://pubcasefinder.dbcls.jp/rdf"
+        ]
+      }
+    ],
+    "title": "PubCaseFinder RDF",
+    "website": "https://pubcasefinder.dbcls.jp/",
+    "description": "PubCaseFinder (PCF) is a Human Phenotype Ontology (HPO)-based clinical decision support system for rare and genetic diseases, always up-to-date.",
+    "tags": [
+      "Rare Disease",
+      "Genetic Disease",
+      "Human Phenotype Ontology",
+      "Phenotype",
+      "Disease Search"
+    ],
+    "provider": "Database Center for Life Science",
+    "creators": [
+      {
+        "name": "Jaemoon Shin",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Atsuko Yamaguchi",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Shuichi Kawashima",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Toyofumi Fujiwara",
+        "affiliation": "Database Center for Life Science"
+      }
+    ],
+    "version": "1.3.0",
+    "issued": "2021-05-18",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0) Database Center for Life Science"
+    ],
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "fabio": "<http://purl.org/spar/fabio>",
+    "foaf": "<http://xmlns.com/foaf/0.1>",
+    "hgnc": "<https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/>",
+    "ihp": "<http://identifiers.org/>",
+    "ipubmed": "<http://identifiers.org/pubmed/>",
+    "nando": "<http://nanbyodata.jp/ontology/nando#>",
+    "ncbigene": "<http://identifiers.org/ncbigene/>",
+    "ncit": "<http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#>",
+    "med2rdf": "<http://med2rdf.org/ontology/>",
+    "mesh": "<http://id.nlm.nih.gov/mesh/>",
+    "mim": "<http://identifiers.org/mim/>",
+    "oa": "<http://www.w3.org/ns/oa#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "ordo": "<http://www.orpha.net/ORDO/>",
+    "pubmed": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "nuc": "<http://ddbj.nig.ac.jp/ontologies/nucleotide/>",
+    "hop": "<http://purl.org/net/orthordf/hOP/ontology#>",
+    "hoom": "<http://www.semanticweb.org/ontology/HOOM>",
+    "sparql": {
+      "description": "SPARQL test, Get ladfs:label,rdfs:subClassof",
+      "variables": [
+        "nando_id",
+        "label_ja",
+        "label_en",
+        "label_hira",
+        "notification_number",
+        "close_match",
+        "see_also"
+      ]
+    },
+    "issued": "2021-05-18",
+    "modified": null
+  },
+  {
+    "id": "pubchem",
+    "endpoint": "<http://rdf.ncbi.nlm.nih.gov/pubchem/endpoint/>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "vocab": "<http://rdf.ncbi.nlm.nih.gov/pubchem/vocabulary#>",
+    "bao": "<http://www.bioassayontology.org/bao#>",
+    "bioassay": "<http://rdf.ncbi.nlm.nih.gov/pubchem/bioassay/>",
+    "source": "<http://rdf.ncbi.nlm.nih.gov/pubchem/source/>",
+    "taxonomy": "<http://rdf.ncbi.nlm.nih.gov/pubchem/taxonomy/>",
+    "measuregroup": "<http://rdf.ncbi.nlm.nih.gov/pubchem/measuregroup/>",
+    "protein": "<http://rdf.ncbi.nlm.nih.gov/pubchem/protein/>",
+    "substance": "<http://rdf.ncbi.nlm.nih.gov/pubchem/substance/>",
+    "compound": "<http://rdf.ncbi.nlm.nih.gov/pubchem/compound/>",
+    "reference": "<http://rdf.ncbi.nlm.nih.gov/pubchem/reference/>",
+    "patent": "<http://rdf.ncbi.nlm.nih.gov/pubchem/patent/>",
+    "patentassignee": "<http://rdf.ncbi.nlm.nih.gov/pubchem/patentassignee/>",
+    "patentcpc": "<http://rdf.ncbi.nlm.nih.gov/pubchem/patentcpc/>",
+    "patentipc": "<http://rdf.ncbi.nlm.nih.gov/pubchem/patentipc/>",
+    "pathway": "<http://rdf.ncbi.nlm.nih.gov/pubchem/pathway/>",
+    "synonym": "<http://rdf.ncbi.nlm.nih.gov/pubchem/synonym/>",
+    "concept": "<http://rdf.ncbi.nlm.nih.gov/pubchem/concept/>",
+    "gene": "<http://rdf.ncbi.nlm.nih.gov/pubchem/gene/>",
+    "conserveddomain": "<http://rdf.ncbi.nlm.nih.gov/pubchem/conserveddomain/>",
+    "descriptor": "<http://rdf.ncbi.nlm.nih.gov/pubchem/descriptor/>",
+    "inchikey": "<http://rdf.ncbi.nlm.nih.gov/pubchem/inchikey>",
+    "pav": "<http://purl.org/pav/>",
+    "biopax": "<http://www.biopax.org/release/biopax-level3.owl#>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "cito": "<http://purl.org/spar/cito/>",
+    "epo_patent": "<http://data.epo.org/linked-data/def/patent/>",
+    "epo_cpc": "<http://data.epo.org/linked-data/def/cpc/>",
+    "epo_ipc": "<http://data.epo.org/linked-data/def/ipc/>",
+    "pdbo": "<http://rdf.wwpdb.org/schema/pdbx-v40.owl#>",
+    "up": "<http://purl.uniprot.org/core/>",
+    "fabio": "<http://purl.org/spar/fabio/>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "chembl": "<http://rdf.ebi.ac.uk/resource/chembl/molecule/>",
+    "ensembl": "<http://rdf.ebi.ac.uk/resource/ensembl/>",
+    "cooccurrence": "<http://rdf.ncbi.nlm.nih.gov/pubchem/cooccurrence/>",
+    "author": "<http://rdf.ncbi.nlm.nih.gov/pubchem/author/>",
+    "book": "<http://rdf.ncbi.nlm.nih.gov/pubchem/book/>",
+    "cell": "<http://rdf.ncbi.nlm.nih.gov/pubchem/cell/>",
+    "disease": "<http://rdf.ncbi.nlm.nih.gov/pubchem/disease/>",
+    "grant": "<http://rdf.ncbi.nlm.nih.gov/pubchem/grant/>",
+    "journal": "<http://rdf.ncbi.nlm.nih.gov/pubchem/journal/>",
+    "organization": "<http://rdf.ncbi.nlm.nih.gov/pubchem/organization/>",
+    "edam": "<http://edamontology.org/>",
+    "vcard2006": "<http://www.w3.org/2006/vcard/ns#>",
+    "prism": "<http://prismstandard.org/namespaces/basic/3.0/>",
+    "frapo": "<http://purl.org/cerif/frapo/>",
+    "substance_compound_pair": {
+      "description": "List the pairs of PubChem substance and its counterpart in PubChem Compound",
+      "variables": [
+        "PubChemSubstance",
+        "substance_normalized_counterpart"
+      ],
+      "options": {
+        "distinct": true
+      }
+    },
+    "cooccurrence_compound_disease": {
+      "description": "What are the top five diseases commonly mentioned with indomethacin (CID3715)?  (cf. https://pubchem.ncbi.nlm.nih.gov/docs/rdf-use-cases#section=Case-11-What-are-the-top-five-diseases-commonly-mentioned-with-indomethacin-CID3715)",
+      "variables": [
+        "PubChemCompoundDiseaseCooccurrence",
+        "compound_disease_cooccurrence_subject",
+        "compound_disease_cooccurrence_object",
+        "compound_disease_cooccurrence_score",
+        "disease_pref_label"
+      ],
+      "parameters": {
+        "compound_disease_cooccurrence_subject": "compound:CID3715"
+      },
+      "options": {
+        "order_by": [
+          {
+            "compound_disease_cooccurrence_score": "desc"
+          }
+        ],
+        "limit": 5
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "pubmed",
+    "endpoint": [
+      "https://rdfportal.org/ncbi/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/pubmed"
+        ]
+      }
+    ],
+    "mesh": "<http://id.nlm.nih.gov/mesh/>",
+    "meshv": "<http://id.nlm.nih.gov/mesh/vocab#>",
+    "prism": "<http://prismstandard.org/namespeces/1.2/basic/>",
+    "pubmedpurl": "<http://purl.jp/bio/10/pubmed/>",
+    "bibo": "<http://purl.org/ontology/bibo/>",
+    "olo": "<http://purl.org/ontology/olo/core#>",
+    "pav": "<http://purl.org/pav/>",
+    "fabio": "<http://purl.org/spar/fabio/>",
+    "pubmed": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "org": "<http://www.w3.org/ns/org#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "sparql": {
+      "description": "Obtain a PubMed record specified by PMID:31558841",
+      "parameters": {
+        "pmid": 31558841
+      },
+      "variables": [
+        "doi_prism",
+        "eissn",
+        "ending_page",
+        "publication_name",
+        "starting_page",
+        "publication_date",
+        "created_date",
+        "creator",
+        "date_issued",
+        "lang",
+        "journal_name",
+        "title",
+        "abstract",
+        "issue_no",
+        "pmid",
+        "volume_num",
+        "derived_from",
+        "date_last_updated",
+        "issn",
+        "title_abbrev",
+        "nlm_id",
+        "doi",
+        "place_of_publication",
+        "mesh_descriptorqualifierpair",
+        "mesh_geographicaldescriptor",
+        "mesh_checktag",
+        "mesh_topicaldescriptor_1",
+        "mesh_topicaldescriptor_2",
+        "mesh_publicationtype",
+        "mesh_scr_chemical"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "pubtator",
+    "endpoint": [
+      "https://rdfportal.org/ncbi/sparql",
+      {
+        "graph": [
+          "http://rdfportal.org/dataset/pubtator_central"
+        ]
+      }
+    ],
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "quanto",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://quanto.dbcls.jp",
+          "http://purl.jp/bio/01/quanto/ontology/sos#"
+        ]
+      }
+    ],
+    "title": "Quanto RDF",
+    "website": "https://sra.dbcls.jp/",
+    "description": "Raw sequence data quality statistics calculated from the Sequence Read Archive data",
+    "tags": [],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Tazro Inutano Ohta",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Name 2",
+        "affiliation": "Affiliation 2"
+      }
+    ],
+    "version": "0.1.2",
+    "issued": "2016-07-12",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "cc4": "<http://creativecommons.org/licenses/by-sa/4.0/>",
+    "dbcls": "<http://dbcls.rois.ac.jp/>",
+    "sra": "<http://identifiers.org/insdc.sra/>",
+    "sos": "<http://purl.jp/bio/01/quanto/ontology/sos#>",
+    "quanto": "<http://purl.jp/bio/01/quanto/resource/>",
+    "pav": "<http://purl.org/pav/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "QuantoReport",
+        "totalSequences",
+        "maxSequenceLength",
+        "medianSequenceLength",
+        "overallNContent"
+      ]
+    },
+    "issued": "2016-07-12",
+    "modified": null
+  },
+  {
+    "id": "reactome",
+    "endpoint": [
+      "https://rdfportal.org/ebi/sparql",
+      {
+        "graph": [
+          "http://rdf.ebi.ac.uk/dataset/reactome"
+        ]
+      }
+    ],
+    "title": "Reactome RDF",
+    "website": "https://reactome.org/",
+    "description": "REACTOMEは、オープンソース、オープンアクセスで、マニュアルキュレーションされ、ピアレビューされた、パスウェイデータベースです。",
+    "tags": [
+      "Interaction/Pathway"
+    ],
+    "provider": "Reactome Team (https://reactome.org/)",
+    "creators": "Reactome Team (https://reactome.org/)",
+    "version": 84,
+    "issued": "2023-04",
+    "licenses": [
+      "Creative Commons Public Domain (CC0) License"
+    ],
+    "biopax": "<http://www.biopax.org/release/biopax-level3.owl#>",
+    "reactome": "<http://www.reactome.org/biopax/84/48887#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "sparql": {
+      "description": "Pathway",
+      "variables": [
+        "pathway_display_name",
+        "pathway_db",
+        "pathway_id",
+        "biochemical_reaction_display_name",
+        "left_molecule_db",
+        "right_molecule_db",
+        "left_molecule_id",
+        "right_molecule_id",
+        "left_protein_db",
+        "right_protein_db",
+        "left_protein_id",
+        "right_protein_id"
+      ]
+    },
+    "pathway_protein": {
+      "variables": [
+        "pathway_display_name",
+        "pathway_db",
+        "pathway_id",
+        "left_protein_db",
+        "left_protein_id",
+        "right_protein_db",
+        "right_protein_id"
+      ]
+    },
+    "pathway_compound": {
+      "variables": [
+        "pathway_display_name",
+        "pathway_db",
+        "pathway_id",
+        "left_molecule_db",
+        "left_molecule_id",
+        "right_molecule_db",
+        "right_molecule_id"
+      ]
+    },
+    "issued": "2023-04",
+    "modified": null
+  },
+  {
+    "id": "refex",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://refex.dbcls.jp/rdf/fantom5",
+          "http://refex.dbcls.jp/rdf/genechip",
+          "http://purl.jp/bio/01/refexo"
+        ]
+      }
+    ],
+    "title": "RefEx RDF",
+    "website": "http://refex.dbcls.jp/index.php?lang=ja",
+    "description": "RDFized reference gene expresson dataset derived from CAGE and GeneChip experiments in the RefEx database.",
+    "tags": [
+      "Gene",
+      "Tag sequence (nucleic acid)",
+      "Gene expression"
+    ],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Shuichi Kawahsima",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Hiromasa Ono",
+        "affiliation": "Database Center for Life Science"
+      }
+    ],
+    "version": "2017-04-07",
+    "issued": "2017-04-07",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0) Database Center for Life Science"
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "refexo": "<http://purl.jp/bio/01/refexo#>",
+    "sparql": {
+      "description": "RDFized reference gene expresson dataset derived from CAGE and GeneChip experiments in the RefEx database.",
+      "variables": [
+        "refex_id",
+        "ex_value",
+        "see_also",
+        "RefExSample",
+        "sample_id",
+        "taxonomy",
+        "age",
+        "stage",
+        "description",
+        "cell_type",
+        "disease",
+        "dev_site",
+        "refexo_sample"
+      ]
+    },
+    "stanza_sparql": {
+      "description": "RDFized reference gene expresson dataset derived from CAGE and GeneChip experiments in the RefEx database.",
+      "variables": [
+        "refex_id",
+        "ex_value",
+        "see_also",
+        "RefExSample",
+        "sample_id",
+        "taxonomy",
+        "age",
+        "stage",
+        "description",
+        "cell_type",
+        "disease",
+        "dev_site",
+        "refexo_sample"
+      ],
+      "parameters": {
+        "refex_id": "RFX0000113860"
+      }
+    },
+    "refex_entry": {
+      "output_dir": "stanza",
+      "label": "RefEx entry",
+      "definition": "Stanza for RefEx entry",
+      "sparql": "stanza_sparql",
+      "parameters": {
+        "refex_id": {
+          "example": "RFX0000062273",
+          "description": "RefEx identifier",
+          "required": true
+        }
+      }
+    },
+    "issued": "2017-04-07",
+    "modified": null
+  },
+  {
+    "id": "rhea",
+    "endpoint": [
+      "https://sparql.rhea-db.org/sparql"
+    ],
+    "title": "Rhea",
+    "website": "https://www.rhea-db.org/",
+    "description": "酵素とゲノムスケールの代謝ネットワークやモデルのアノテーションに使用することを目的とした、専門家によってキュレーションされた生化学反応のリソース。",
+    "tags": [
+      "Protein Enzyme"
+    ],
+    "provider": "SIB and EMBL-EBI",
+    "creators": [
+      {
+        "name": "Anne Morgat",
+        "affiliation": "INRIA Grenoble Rhˆone-Alpes"
+      },
+      {
+        "name": "Thierry Lombardot",
+        "affiliation": "Swiss-Prot Group, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Kristian B. Axelsen",
+        "affiliation": "Swiss-Prot Group, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Lucila Aimo",
+        "affiliation": "Swiss-Prot Group, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Anne Niknejad",
+        "affiliation": "Vital-IT, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Nevila Hyka-Nouspikel",
+        "affiliation": "Swiss-Prot Group, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Elisabeth Coudert",
+        "affiliation": "Swiss-Prot Group, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Monica Pozzato",
+        "affiliation": "Swiss-Prot Group, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Marco Pagni",
+        "affiliation": "Vital-IT, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Sébastien Moretti",
+        "affiliation": "Department of Ecology and Evolution, Biophore, Evolutionary Bioinformatics group,University of Lausanne"
+      },
+      {
+        "name": "Steven Rosanoff",
+        "affiliation": "European Molecular Biology Laboratory, EuropeanBioinformatics Institute (EMBL-EBI)"
+      },
+      {
+        "name": "Joseph Onwubiko",
+        "affiliation": "European Molecular Biology Laboratory, EuropeanBioinformatics Institute (EMBL-EBI)"
+      },
+      {
+        "name": "Lydie Bougueleret",
+        "affiliation": "Swiss-Prot Group, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Ioannis Xenarios",
+        "affiliation": "University of Geneva, Department of Biochemistr"
+      },
+      {
+        "name": "Nicole Redaschi",
+        "affiliation": "Swiss-Prot Group, SIB Swiss Institute of Bioinformatics"
+      },
+      {
+        "name": "Alan Bridge",
+        "affiliation": "Swiss-Prot Group, SIB Swiss Institute of Bioinformatics"
+      }
+    ],
+    "version": "Rhea release 114",
+    "issued": "2020-08-13",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "uniprot_enzyme": "<http://purl.uniprot.org/enzyme/>",
+    "pubmed": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "rhea": "<http://rdf.rhea-db.org/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "get_approved_reactions": {
+      "description": "Select all Rhea reactions (unspecified direction), with \"Approved\" status",
+      "variables": [
+        "Reaction",
+        "status",
+        "equation"
+      ],
+      "parameters": {
+        "status": "rhea:Approved"
+      }
+    },
+    "get_reactions_with_molecule": {
+      "description": "Select all approved reactions using CHEBI:29985 (L-glutamate) as small molecule participant",
+      "variables": [
+        "Reaction",
+        "status",
+        "sub_class_of",
+        "equation",
+        "chebi"
+      ],
+      "parameters": {
+        "sub_class_of": "rhea:Reaction",
+        "status": "rhea:Approved",
+        "chebi": "obo:CHEBI_29985"
+      }
+    },
+    "issued": "2020-08-13",
+    "modified": null
+  },
+  {
+    "id": "sra_experiment",
+    "endpoint": "http://virtuoso:8890/sparql",
+    "title": "SRA Experiment RDF",
+    "website": "https://www.ddbj.nig.ac.jp/dra/",
+    "description": "SRA Experiment RDF developed by DBCLS and distributed by DDBJ",
+    "tags": [],
+    "provider": "Bioinformation and DDBJ Center",
+    "creators": [
+      {
+        "name": "Tazro Ohta",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Shuya Ikeda",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Shuichi Kawashima",
+        "affiliation": "Database Center for Life Science"
+      },
+      {
+        "name": "Takatomo Fujisawa",
+        "affiliation": "Bioinformation and DDBJ Center"
+      }
+    ],
+    "version": "20200903-1443",
+    "issued": "2020-09-03",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "idorg_sra": "<http://identifiers.org/insdc.sra/>",
+    "dra_ont": "<http://ddbj.nig.ac.jp/ontologies/dra/>",
+    "filter_by_instrument": {
+      "description": "Search experiments with specific instruments",
+      "variables": [
+        "experiment_id",
+        "experiment_label"
+      ],
+      "parameters": {
+        "instrument_model": "dra_ont:PacBio_RS"
+      }
+    },
+    "issued": "2020-09-03",
+    "modified": null
+  },
+  {
+    "id": "ssbd",
+    "endpoint": [
+      "https://rdfportal.org/primary/sparql",
+      {
+        "graph": [
+          "http://metadb.riken.jp/db/SSBD"
+        ]
+      }
+    ],
+    "title": "SSBD: Meta-information of quantitative data and microscopy images\n",
+    "website": "http://ssbd.qbic.riken.jp/",
+    "description": "Meta-information of quantitative data and datasets of microscopy images provided from SSBD database",
+    "tags": [
+      "Cell",
+      "Organism",
+      "Other biomolecule",
+      "Image/Movie",
+      "Gene expression",
+      "Others"
+    ],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Yukako Tohsato",
+        "affiliation": "Osaka Electro-Communication University, Department of Engineering Informatics"
+      },
+      {
+        "name": "Koji Kyoda",
+        "affiliation": "RIKEN Quantitative Biology Center, Laboratory for Developmental Dynamics"
+      },
+      {
+        "name": "Kenneth H. L. Ho",
+        "affiliation": "RIKEN Quantitative Biology Center, Laboratory for Developmental Dynamics"
+      },
+      {
+        "name": "Shuichi Onami",
+        "affiliation": "RIKEN Quantitative Biology Center, Laboratory for Developmental Dynamics"
+      }
+    ],
+    "version": "SSBD31_20171218 release 20180324",
+    "issued": "2018-03-24",
+    "licenses": [
+      "Creative Commons Attribution-ShareAlike 2.1 Japan (CC BY-SA 2.1 JP)"
+    ],
+    "ccbyncsa40": "<http://creativecommons.org/licenses/by-nc-sa/4.0/>",
+    "ssbd": "<http://metadb.riken.jp/db/SSBD/>",
+    "ssbdo": "<http://metadb.riken.jp/ontology/SSBD/>",
+    "pubmed": "<http://rdf.ncbi.nlm.nih.gov/pubmed/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "vcard": "<http://www.w3.org/2006/vcard/ns#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "QuantitativeBiologicalDynamicsData"
+      ]
+    },
+    "issued": "2018-03-24",
+    "modified": null
+  },
+  {
+    "id": "test",
+    "ex": "<http://example.org/>",
+    "sparql1": {
+      "description": "Test1",
+      "variables": [
+        "object_c"
+      ]
+    },
+    "sparql2": {
+      "description": "Test2",
+      "variables": [
+        "SubjectA",
+        "object_c"
+      ]
+    },
+    "sparql3": {
+      "description": "Test3",
+      "variables": [
+        "SubjectB",
+        "object_c"
+      ]
+    },
+    "sparql4": {
+      "description": "Test4",
+      "variables": [
+        "object_c",
+        "object_e"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "togoid",
+    "endpoint": [
+      "http://ep.dbcls.jp/togoid/sparql",
+      {
+        "graph": [
+          "http://rdf.integbio.jp/dataset/togoid"
+        ]
+      }
+    ],
+    "title": "TogoID RDF",
+    "website": "https://togoid.dbcls.jp/",
+    "description": "TogoID は、データベースIDの関係をもとに、IDの検索や変換を行うサービスです。",
+    "tags": [
+      "Others"
+    ],
+    "provider": "情報・システム研究機構、データサイエンス共同利用基盤施設、ライフサイエンス統合データベースセンター",
+    "creators": [
+      {
+        "name": "情報・システム研究機構、データサイエンス共同利用基盤施設、ライフサイエンス統合データベースセンター"
+      },
+      {
+        "affiliation": "--"
+      }
+    ],
+    "version": "2022-04-01",
+    "issued": "2022-04-01",
+    "license": {
+      "name": "NA",
+      "url": "NA",
+      "credit": "NA"
+    },
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "tio": "<http://togoid.dbcls.jp/ontology#>",
+    "up": "<http://purl.uniprot.org/uniprot/>",
+    "pdb": "<http://rdf.wwpdb.org/pdb/>",
+    "issued": "2022-04-01",
+    "modified": null
+  },
+  {
+    "id": "togomedium",
+    "gm": "<http://togomedium.org/>",
+    "gmo": "<http://purl.jp/bio/10/gmo/>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "olo": "<http://purl.org/ontology/olo/core#>",
+    "sio": "<http://semanticscience.org/resource/>",
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "togovar",
+    "endpoint": "https://grch38.togovar.org/sparql",
+    "gvo": "<http://genome-variation.org/resource#>",
+    "dbsnp": "<http://identifiers.org/dbsnp/>",
+    "hco": "<http://identifiers.org/hco/12/>",
+    "hco_grch38": "<http://identifiers.org/hco/12/GRCh38#>",
+    "hgnc": "<http://identifiers.org/hgnc/>",
+    "enst": "<http://rdf.ebi.ac.uk/resource/ensembl.transcript/>",
+    "ensembl": "<http://rdf.ebi.ac.uk/resource/ensembl/>",
+    "tgv": "<http://togovar.biosciencedbc.jp/vocabulary/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "gene": {
+      "description": "Obrain variations on certain gene",
+      "parameters": {
+        "gene_label": "PAX4"
+      },
+      "variables": [
+        "gene_label",
+        "identifier",
+        "dbsnp",
+        "reference",
+        "position",
+        "reference_allele",
+        "alternative_allele"
+      ]
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "uberon",
+    "endpoint": "https://rdfportal.org/bioportal/sparql",
+    "graphs": [
+      "http://rdf.integbio.jp/dataset/bioportal/uberon"
+    ],
+    "dc": "<http://purl.org/dc/elements/1.1/>",
+    "dcterms": "<http://purl.org/dc/terms/>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "oboinowl": "<http://www.geneontology.org/formats/oboInOwl#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "labels": {
+      "description": "List the pairs of UBERON ID and its label",
+      "variables": [
+        "id",
+        "label"
+      ],
+      "parameters": {
+        "has_obo_namespace": "uberon"
+      },
+      "options": {
+        "distinct": true
+      }
+    },
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "uniprot",
+    "endpoint": [
+      "https://rdfportal.org/sib/sparql",
+      {
+        "graph": [
+          "http://sparql.uniprot.org/uniprot",
+          "http://sparql.uniprot.org/obsolete",
+          "http://sparql.uniprot.org/citationmapping",
+          "http://sparql.uniprot.org/taxonomy",
+          "http://sparql.uniprot.org/citations",
+          "http://sparql.uniprot.org/proteomes",
+          "http://sparql.uniprot.org/go",
+          "http://sparql.uniprot.org/enzyme",
+          "http://sparql.uniprot.org/diseases",
+          "http://sparql.uniprot.org/journal",
+          "http://sparql.uniprot.org/pathways",
+          "http://sparql.uniprot.org/keywords",
+          "http://sparql.uniprot.org/locations",
+          "http://sparql.uniprot.org/tissues",
+          "http://sparql.uniprot.org/core",
+          "http://sparql.uniprot.org/databases"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "https://sparql.uniprot.org/sparql",
+      "https://rdfportal.org/sib/sparql"
+    ],
+    "title": "UniProt RDF",
+    "website": "https://uniprot.org/",
+    "description": "The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data.",
+    "tags": [
+      "Protein"
+    ],
+    "provider": "The Swiss Institute of Bioinformatics",
+    "creators": [
+      {
+        "name": "The Swiss Institute of Bioinformatics"
+      }
+    ],
+    "version": 202301,
+    "issued": "2023-03-01",
+    "licenses": [
+      "Creative Commons Attribution 4.0 International (CC BY 4.0) License"
+    ],
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "dct": "<http://purl.org/dc/terms/>",
+    "obo": "<http://purl.obolibrary.org/obo/>",
+    "skos": "<http://www.w3.org/2004/02/skos/core#>",
+    "foaf": "<http://xmlns.com/foaf/0.1/>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "up": "<http://purl.uniprot.org/uniprot/>",
+    "core": "<http://purl.uniprot.org/core/>",
+    "taxonomy": "<http://purl.uniprot.org/taxonomy/>",
+    "enzyme": "<http://purl.uniprot.org/enzyme/>",
+    "citations": "<http://purl.uniprot.org/citations/>",
+    "pubmed": "<https://pubmed.ncbi.nlm.nih.gov/>",
+    "keywords": "<http://purl.uniprot.org/keywords/>",
+    "isoforms": "<http://purl.uniprot.org/isoforms/>",
+    "rhea": "<http://rdf.rhea-db.org/>",
+    "dbsnp": "<http://purl.uniprot.org/dbsnp/>",
+    "locations": "<http://purl.uniprot.org/locations/>",
+    "annotation": "<http://purl.uniprot.org/annotation/>",
+    "diseases": "<http://purl.uniprot.org/diseases/>",
+    "database": "<http://purl.uniprot.org/database/>",
+    "unipathway": "<http://purl.uniprot.org/unipathway/>",
+    "names": {
+      "description": "protein name, mnemonic and gene name of human",
+      "variables": [
+        "UniProt",
+        "recommended_name",
+        "submited_name",
+        "mnemonic",
+        "gene_name",
+        "taxonomy"
+      ],
+      "parameters": {
+        "taxonomy": "taxonomy:9606"
+      },
+      "options": {
+        "distinct": true
+      }
+    },
+    "ptms": {
+      "description": "PTM sites and descriptions of an UniProt",
+      "variables": [
+        "UniProt",
+        "mod_desc",
+        "mod_begin",
+        "mod_end"
+      ],
+      "parameters": {
+        "UniProt": "up:Q9BYF8"
+      }
+    },
+    "hgnc": {
+      "description": "corresponding HGNC ID of human",
+      "variables": [
+        "UniProt",
+        "db_resource",
+        "database"
+      ],
+      "parameters": {
+        "database": "database:HGNC",
+        "taxonomy": "taxonomy:9606"
+      }
+    },
+    "refex_entry": {
+      "output_dir": "stanza",
+      "label": "RefEx entry",
+      "definition": "Stanza for RefEx entry",
+      "sparql": "stanza_sparql",
+      "parameters": {
+        "refex_id": {
+          "example": "RFX0000062273",
+          "description": "RefEx identifier",
+          "required": true
+        }
+      }
+    },
+    "issued": "2023-03-01",
+    "modified": null
+  },
+  {
+    "id": "vg",
+    "rdfs": "<http://www.w3.org/2000/01/rdf-schema#>",
+    "xsd": "<http://www.w3.org/2001/XMLSchema#>",
+    "node": "<http://example.org/vg/node/>",
+    "path": "<http://example.org/vg/path/>",
+    "vg": "<http://biohackathon.org/resource/vg#>",
+    "rdf": "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>",
+    "faldo": "<http://biohackathon.org/resource/faldo#>",
+    "issued": null,
+    "modified": null
+  },
+  {
+    "id": "wurcs",
+    "endpoint": [
+      "https://sparql.glyconavi.org/sparql",
+      {
+        "graph": [
+          "http://rdf.glycoinfo.org/wurcs/0.5.1",
+          "http://rdf.glycoinfo.org/wurcs/ms/0.2",
+          "http://rdf.glycoinfo.org/wurcs/seq/0.3"
+        ]
+      }
+    ],
+    "another_endpoint": [
+      "https://sparql.glyconavi.org/sparql",
+      {
+        "graph": [
+          "http://rdf.glycoinfo.org/wurcs-rdf-0.5.1-20190905"
+        ]
+      }
+    ],
+    "title": "RDF title",
+    "website": "https://example.com/",
+    "description": "RDF description.",
+    "tags": [],
+    "provider": null,
+    "creators": [
+      {
+        "name": "Name 1",
+        "affiliation": "Affiliation 1"
+      },
+      {
+        "name": "Name 2",
+        "affiliation": "Affiliation 2"
+      }
+    ],
+    "version": "2020-01-01",
+    "issued": "2020-01-01",
+    "licenses": [
+      "Attribution 4.0 International (CC BY 4.0)"
+    ],
+    "glycan": "<http://rdf.glycoinfo.org/glycan/>",
+    "wurcs": "<http://rdf.glycoinfo.org/glycan/wurcs/2.0/>",
+    "wcs18MO": "<http://rdf.glycoinfo.org/glycan/G00018MO/wurcs/2.0/>",
+    "monosac": "<http://rdf.glycoinfo.org/glycan/wurcs/2.0/Monosaccharide/>",
+    "owl": "<http://www.w3.org/2002/07/owl#>",
+    "sparql": {
+      "description": "SPARQL description.",
+      "variables": [
+        "Node0",
+        "node_2",
+        "node_8",
+        "node_9",
+        "node_10",
+        "node_11",
+        "node_12",
+        "node_14",
+        "node_16",
+        "node_19",
+        "node_22",
+        "node_25"
+      ]
+    },
+    "issued": "2020-01-01",
+    "modified": null
+  }
+]

@@ -1,0 +1,2 @@
+pattern	graph
+latest/MassBank-RDF/draft_ttl/MassBank_RDF_ttl/**/*.ttl	http://rdfportal.org/dataset/massbank

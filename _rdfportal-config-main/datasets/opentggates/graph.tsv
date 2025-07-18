@@ -1,0 +1,2 @@
+pattern	graph
+latest/rdf/graph-1/**/*.ttl	http://rdfportal.org/dataset/open-tggates

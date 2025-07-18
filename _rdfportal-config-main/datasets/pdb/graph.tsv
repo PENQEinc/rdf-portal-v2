@@ -1,0 +1,7 @@
+pattern	graph
+latest/cc/**/*.rdf.gz	http://rdfportal.org/dataset/pdbj
+latest/pdb/**/*.rdf.gz	http://rdfportal.org/dataset/pdbj
+latest/pdb-plus/**/*.rdf.gz	http://rdfportal.org/dataset/pdbj
+latest/prd/**/*.rdf.gz	http://rdfportal.org/dataset/pdbj
+latest/sifts/**/*.ttl.gz	http://rdfportal.org/dataset/pdbj
+latest/pdbx-v50.owl	http://rdf.wwpdb.org/schema/pdbx-v50.owl

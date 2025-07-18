@@ -1,0 +1,8 @@
+pattern	graph
+latest/rdf/graph-1/*.ttl.gz	http://mbgd.genome.ad.jp/rdf/resource/default
+latest/rdf/graph-2/*.ttl.gz	http://mbgd.genome.ad.jp/rdf/resource/gene
+latest/rdf/graph-3/*.ttl.gz	http://mbgd.genome.ad.jp/rdf/resource/organism
+latest/rdf/graph-4/*.ttl.gz	http://mbgd.genome.ad.jp/rdf/resource/nucseq
+latest/rdf/graph-5/*.ttl.gz	http://mbgd.genome.ad.jp/rdf/resource/xref_uniprot
+latest/rdf/ontology-1/*.ttl.gz	http://purl.jp/bio/11/orth
+latest/rdf/ontology-2/*.ttl.gz	http://purl.jp/bio/11/mbgd

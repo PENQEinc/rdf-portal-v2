@@ -1,0 +1,4 @@
+pattern	graph
+latest/rdf/ontology-1/*.ttl.gz	http://purl.jp/bio/01/refexo
+latest/rdf/graph-1/*.ttl.gz	http://refex.dbcls.jp/rdf/fantom5
+latest/rdf/graph-2/*.ttl.gz	http://refex.dbcls.jp/rdf/genechip

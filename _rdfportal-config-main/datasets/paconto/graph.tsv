@@ -1,0 +1,3 @@
+pattern	graph
+latest/rdf/graph-1/*.rdf	http://jcggdb.jp/rdf/diseases/paconto
+latest/rdf/ontology-1/*.rdf	http://jcggdb.jp/rdf/diseases/paconto-schema.rdf

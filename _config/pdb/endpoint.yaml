@@ -1,0 +1,5 @@
+endpoint:
+  - https://rdfportal.org/pdb/sparql
+  - graph:
+    - http://rdfportal.org/dataset/pdbj
+    - http://rdf.wwpdb.org/schema/pdbx-v50.owl

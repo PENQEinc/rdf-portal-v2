@@ -1,0 +1,2 @@
+pattern	graph
+latest/*.ttl	http://rdfportal.org/dataset/ensembl

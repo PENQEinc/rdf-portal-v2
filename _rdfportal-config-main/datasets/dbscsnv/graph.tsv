@@ -1,0 +1,2 @@
+pattern	graph
+latest/rdf/*.nt.gz	http://rdfportal.org/dataset/med2rdf/dbscsnv

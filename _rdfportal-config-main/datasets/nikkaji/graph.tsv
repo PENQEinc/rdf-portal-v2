@@ -1,0 +1,9 @@
+pattern	graph
+latest/rdf/graph-1/NBDC_NikkajiRDF_main/*.ttl.gz	http://rdfportal.org/dataset/nikkaji/main
+latest/rdf/graph-2/NBDC_NikkajiRDF_InChI/*.ttl.gz	http://rdfportal.org/dataset/nikkaji/inchi
+latest/rdf/graph-3/NBDC_NikkajiRDF_SMILES/*.ttl.gz	http://rdfportal.org/dataset/nikkaji/smiles
+latest/rdf/graph-4/NBDC_NikkajiRDF_link2JGLOBAL.ttl.gz	http://rdfportal.org/dataset/nikkaji/link2jglobal
+latest/rdf/graph-5/NBDC_NikkajiRDF_MFMW/*.ttl.gz	http://rdfportal.org/dataset/nikkaji/mwmf
+latest/rdf/graph-6/NBDC_NikkajiRDF_link2OtherDBs_basedOnUniChem/*.ttl.gz	http://rdfportal.org/dataset/nikkaji/link2jglobal_basedon_unichem
+latest/rdf/graph-7/NBDC_NikkajiRDF_link2OtherDBs_basedOnPubChem/*.ttl.gz	http://rdfportal.org/dataset/nikkaji/link2jglobal_basedon_pubchem
+latest/rdf/graph-8/NBDC_NikkajiRDF_core/*.ttl.gz	http://rdfportal.org/dataset/nikkaji/core

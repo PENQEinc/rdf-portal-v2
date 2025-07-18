@@ -1,0 +1,4 @@
+pattern	graph
+latest/rdf/graph-1/*.ttl.gz	http://rdf.glycoinfo.org/wurcs/0.5.1
+latest/rdf/graph-2/*.ttl.gz	http://rdf.glycoinfo.org/wurcs/ms/0.2
+latest/rdf/graph-3/*.ttl.gz	http://rdf.glycoinfo.org/wurcs/seq/0.3

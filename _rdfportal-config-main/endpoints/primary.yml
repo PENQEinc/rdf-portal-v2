@@ -1,0 +1,81 @@
+---
+name: primary
+
+directory:
+  prefix: /data/rdfportal
+
+database:
+  adapter: virtuoso
+  host: localhost
+  password: <%= ENV.fetch('RDFPORTAL_VIRTUOSO_PASSWORD') %>
+  options:
+    bin: /data/rdfportal/virtuoso/load/bin
+    ini_template: /data/rdfportal/virtuoso/conf/virtuoso-load.ini
+    cors: true
+    federated_query: true
+    text_index: false
+  environment:
+    load:
+      Parameters:
+        ServerPort: 11007
+        NumberOfBuffers: 57000000
+        MaxDirtyBuffers: 42750000
+        MaxSortedTopRows: 200000
+      HTTPServer:
+        ServerPort: 12007
+      Client:
+        SQL_PREFETCH_ROWS: 10000
+        SQL_PREFETCH_BYTES: 1600000
+      SPARQL:
+        ResultSetMaxRows: 1000000
+        MaxQueryCostEstimationTime: 0
+        MaxQueryExecutionTime: 600
+
+load:
+  snapshots: true
+  parallel: 5
+  datasets:
+    - name: disgenet
+    - name: ggdonto
+    - name: nadd
+    - name: naro_genebank
+    - name: opentggates
+    - name: paconto
+    - name: pgdbj
+    - name: quanto
+    - name: refex
+    - name: ssbd
+    - name: famsbase
+    - name: ligandbox
+    - name: glycoepitope
+    - name: glytoucan
+    - name: hgnc
+    - name: homologene
+    - name: knapsack
+    - name: polyinfo
+    - name: icgc
+    - name: mbgd
+    - name: jcm
+    - name: dbcatalog
+    - name: nando
+    - name: nikkaji
+    - name: nbrc
+    - name: pubcasefinder
+    - name: wurcs
+    - name: jpostdb
+    - name: gtdb
+    - name: massbank
+    - name: glycosmos
+    - name: togoid
+    - name: ontology
+
+publish:
+  steps:
+    - action: script
+      file: /data/rdfportal/rdfportal-config/scripts/publish.sh
+      environments:
+        RDFPORTAL_PUBLISH_REMOTE_DIR: /data/rdfportal
+        RDFPORTAL_PUBLISH_VIRTUOSO_DIR: /data/rdfportal/virtuoso
+        RDFPORTAL_PUBLISH_PROXY_DIR: /data/rdfportal/proxy
+        RDFPORTAL_PUBLISH_VIRTUOSO_CONTAINER: virtuoso-primary
+        RDFPORTAL_PUBLISH_PROXY_CONTAINER: proxy-primary

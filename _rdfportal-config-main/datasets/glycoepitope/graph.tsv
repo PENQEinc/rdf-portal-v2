@@ -1,0 +1,3 @@
+pattern	graph
+latest/rdf/graph-1/*.ttl.gz	http://rdf.glycoinfo.org/glycoepitope
+latest/rdf/ontology-1/*.ttl.gz	http://www.glycoepitope.jp/epitopes/glycoepitope.owl

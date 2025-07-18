@@ -1,0 +1,2 @@
+pattern	graph
+latest/**/*.ttl.gz	http://rdfportal.org/dataset/pubmed
