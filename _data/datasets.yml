@@ -1,5 +1,5 @@
 ---
-oma:
+- id: oma
   endpoint:
   - https://sparql.omabrowser.org/sparql/
   - graph:
@@ -44,7 +44,7 @@ oma:
     variables:
     - cluster_id
     - protein_id
-mesh:
+- id: mesh
   endpoint: https://id.nlm.nih.gov/mesh/sparql
   med2rdf:
   - http://sparql.med2rdf.org/sparql
@@ -163,7 +163,7 @@ mesh:
     - Descriptor
     - TreeNumber
     - descriptor_label
-nextprot:
+- id: nextprot
   endpoint:
   - https://integbio.jp/togosite/sparql
   - graph:
@@ -202,7 +202,7 @@ nextprot:
     variables:
     - isoform
     - disease_label
-gtdb:
+- id: gtdb
   endpoint:
   - https://rdfportal.org/primary/sparql
   another_endpoint:
@@ -234,7 +234,7 @@ gtdb:
   bioproject: "<http://identifiers.org/bioproject/>"
   gca: "<http://identifiers.org/insdc.gca/>"
   ncbigenome: "<http://www.ncbi.nlm.nih.gov/datasets/genome/>"
-famsbase:
+- id: famsbase
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -272,7 +272,7 @@ famsbase:
   up: "<http://identifiers.org/uniprot/>"
   faldo: "<http://biohackathon.org/resource/faldo#>"
   pdb: "<http://identifiers.org/pdb/>"
-clinvar:
+- id: clinvar
   endpoint:
   - https://rdfportal.org/ncbi/sparql
   - graph:
@@ -329,7 +329,7 @@ clinvar:
     - id
     - position
     - reference
-homologene:
+- id: homologene
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -364,12 +364,12 @@ homologene:
     variables:
     - Group
     - gene
-pubtator:
+- id: pubtator
   endpoint:
   - https://rdfportal.org/ncbi/sparql
   - graph:
     - http://rdfportal.org/dataset/pubtator_central
-dbscsnv:
+- id: dbscsnv
   endpoint:
   - https://rdfportal.org/med2rdf/sparql
   title: dbscSNV
@@ -399,7 +399,7 @@ dbscsnv:
     - refseq_gene
     - random_forest_score
     - ada_boost_score
-nikkaji:
+- id: nikkaji
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -540,7 +540,7 @@ nikkaji:
         example: J2.330B
         description: Nikkaji number
         required: true
-dbcatalog:
+- id: dbcatalog
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -569,14 +569,14 @@ dbcatalog:
     - db ?title_ja ?title_en ?description:
     parameters:
       description: cancer
-bgee:
+- id: bgee
   endpoint:
   - https://rdfportal.org/sib/sparql
   - graph:
     - http://bgee.org
   another_endpoint:
   - https://www.bgee.org/sparql/
-medgen:
+- id: medgen
   endpoint:
   - https://rdfportal.org/ncbi/sparql
   - graph:
@@ -674,7 +674,7 @@ medgen:
     - medgen_uid_label
     parameters:
       mengen_cid: medgen:C0023467
-kero:
+- id: kero
   endpoint:
   - https://rdfportal.org/kero/sparql
   title: DBKERO RDF
@@ -744,7 +744,7 @@ kero:
     - Rna-seqDataset
     - SnvDataset
     - Tss-seqDataset
-jcm:
+- id: jcm
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -789,7 +789,7 @@ jcm:
   foaf: "<http://xmlns.com/foaf/0.1/>"
   meo: "<http://purl.jp/bio/11/meo/>"
   pdo: "<http://purl.jp/bio/11/pdo/>"
-nlm-catalog:
+- id: nlm-catalog
   endpoint:
   - https://rdfportal.org/ncbi/sparql
   - graph:
@@ -815,7 +815,7 @@ nlm-catalog:
   bibo: "<http://purl.org/ontology/bibo/>"
   prism: "<http://prismstandard.org/namespaces/1.2/basic/>"
   fabio: "<http://purl.org/spar/fabio/>"
-knapsack:
+- id: knapsack
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -907,7 +907,7 @@ knapsack:
     - skos_close_match
     parameters:
       knapsack_id: C00000001
-ssbd:
+- id: ssbd
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -954,7 +954,7 @@ ssbd:
     description: SPARQL description.
     variables:
     - QuantitativeBiologicalDynamicsData
-polyinfo:
+- id: polyinfo
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -1031,12 +1031,12 @@ polyinfo:
     - Homopolymer
     - homopolymer_id
     - abbreviation
-disgenet:
+- id: disgenet
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
     - http://rdfportal.org/dataset/disgenet
-mbgd:
+- id: mbgd
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -1091,7 +1091,7 @@ mbgd:
     - dataset
     - nucseq
     - organism
-naro_genebank:
+- id: naro_genebank
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -1114,7 +1114,7 @@ naro_genebank:
   - name: Creative commons Attribution 4.0 International (CC BY 4.0)
   - url: https://creativecommons.org/licenses/by/4.0/
   - credit: Genebank Project, NARO licensed under CC 表示 - 継承 4.0 国際
-paconto:
+- id: paconto
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -1200,7 +1200,7 @@ paconto:
     - Diseaseclassconcepttype
     - targets_classification
     - conceptpathogenic
-hgnc:
+- id: hgnc
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -1268,7 +1268,7 @@ hgnc:
     - orphanet_id
     - mirbase_id
     - ec_id
-chebi:
+- id: chebi
   endpoint:
   - https://rdfportal.org/ebi/sparql
   - graph:
@@ -1290,7 +1290,7 @@ chebi:
     variables:
     - id
     - inchi
-bmrb:
+- id: bmrb
   endpoint:
   - https://rdfportal.org/pdb/sparql
   - graph:
@@ -1336,7 +1336,7 @@ bmrb:
   - name: Creative Commons Attribution 2.1 Japan (CC BY 2.1 JP)
   - url: https://creativecommons.org/licenses/by/2.1/jp/deed.en
   - credit: BMRB/RDF licensed under CC Attribution 2.1 Japan.
-nando:
+- id: nando
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -1405,7 +1405,7 @@ nando:
         example: RFX0000062273
         description: RefEx identifier
         required: true
-ensembl:
+- id: ensembl
   endpoint:
   - https://rdfportal.org/ebi/sparql
   - graph:
@@ -1451,7 +1451,7 @@ ensembl:
     - ensg_chromosome
     parameters:
       ensg_taxonomy: taxonomy:9606
-pgdbj:
+- id: pgdbj
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -1478,7 +1478,7 @@ pgdbj:
     - protid
     parameters:
       dataset: protid:NP_563687.1
-togoid:
+- id: togoid
   endpoint:
   - http://ep.dbcls.jp/togoid/sparql
   - graph:
@@ -1503,7 +1503,7 @@ togoid:
   tio: "<http://togoid.dbcls.jp/ontology#>"
   up: "<http://purl.uniprot.org/uniprot/>"
   pdb: "<http://rdf.wwpdb.org/pdb/>"
-jpostdb:
+- id: jpostdb
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -1594,7 +1594,7 @@ jpostdb:
     - aa_sequence
     - begin
     - phospho_position
-wurcs:
+- id: wurcs
   endpoint:
   - https://sparql.glyconavi.org/sparql
   - graph:
@@ -1639,7 +1639,7 @@ wurcs:
     - node_19
     - node_22
     - node_25
-refex:
+- id: refex
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -1717,7 +1717,7 @@ refex:
         example: RFX0000062273
         description: RefEx identifier
         required: true
-glycosmos:
+- id: glycosmos
   endpoint:
   - https://ts.glycosmos.org/sparql
   title: GlyCosmos
@@ -1791,13 +1791,13 @@ glycosmos:
     variables:
     - Glycan
     - uberon_label
-ligandbox:
+- id: ligandbox
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
     - http://purl.jp/bio/5/ligandbox/
     - http://rdfportal.org/rdf/download/liganbox/latest/rdf/ontology-1/ligandbox.owl
-expressionatlas:
+- id: expressionatlas
   endpoint: https://integbio.jp/rdf/ebi/sparql
   graphs: http://rdf.ebi.ac.uk/dataset/expressionatlas
   rdf: "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
@@ -1818,7 +1818,7 @@ expressionatlas:
     - dataset_desc
     parameters:
       taxon: obo:NCBITaxon_9606
-chembl:
+- id: "<http://identifiers.org/>"
   endpoint:
   - https://rdfportal.org/ebi/sparql
   - graph:
@@ -1836,7 +1836,6 @@ chembl:
   issued: 2023-03-01
   licenses:
   - Creative Commons Attribution-Share Alike 3.0 Unported License
-  id: "<http://identifiers.org/>"
   pmid: "<http://identifiers.org/pubmed/>"
   taxonomy: "<http://identifiers.org/taxonomy/>"
   bibo: "<http://purl.org/ontology/bibo/>"
@@ -1890,7 +1889,7 @@ chembl:
     parameters:
       drug_mechanism_has_target: chembl_target:CHEMBL1862
       molecule_highest_development_phase: 4
-uniprot:
+- id: uniprot
   endpoint:
   - https://rdfportal.org/sib/sparql
   - graph:
@@ -1991,7 +1990,7 @@ uniprot:
         example: RFX0000062273
         description: RefEx identifier
         required: true
-pubmed:
+- id: pubmed
   endpoint:
   - https://rdfportal.org/ncbi/sparql
   - graph:
@@ -2046,7 +2045,7 @@ pubmed:
     - mesh_topicaldescriptor_2
     - mesh_publicationtype
     - mesh_scr_chemical
-dbnsfp:
+- id: dbnsfp
   endpoint:
   - https://rdfportal.org/med2rdf/sparql
   title: dbNSFP
@@ -2083,7 +2082,7 @@ dbnsfp:
     - transcript_id
     - alpha_missense_rankscore
     - alpha_missense_pred
-glytoucan:
+- id: glytoucan
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -2138,7 +2137,7 @@ glytoucan:
     variables:
     - id
     - Mass
-ddbj:
+- id: ddbj
   endpoint:
   - https://rdfportal.org/ddbj/sparql
   - graph:
@@ -2196,7 +2195,7 @@ ddbj:
     description: SPARQL description.
     variables:
     - Ddbjentry
-nbrc:
+- id: nbrc
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -2275,7 +2274,7 @@ nbrc:
     - Culture
     - habitat
     - location
-nadd:
+- id: nadd
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -2328,7 +2327,7 @@ nadd:
     description: SPARQL description.
     variables:
     - Naddentry
-rhea:
+- id: rhea
   endpoint:
   - https://sparql.rhea-db.org/sparql
   title: Rhea
@@ -2404,7 +2403,7 @@ rhea:
       sub_class_of: rhea:Reaction
       status: rhea:Approved
       chebi: obo:CHEBI_29985
-pubchem:
+- id: pubchem
   endpoint: "<http://rdf.ncbi.nlm.nih.gov/pubchem/endpoint/>"
   owl: "<http://www.w3.org/2002/07/owl#>"
   rdf: "<http://www.w3.org/1999/02/22-rdf-syntax-ns#>"
@@ -2481,7 +2480,7 @@ pubchem:
       order_by:
       - compound_disease_cooccurrence_score: desc
       limit: 5
-opentggates:
+- id: opentggates
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -2549,7 +2548,7 @@ opentggates:
     variables:
     - ProbeEntry
     - ChipEntry
-pdb:
+- id: pdb
   endpoint:
   - https://rdfportal.org/pdb/sparql
   - graph:
@@ -2636,7 +2635,7 @@ pdb:
         example: RFX0000062273
         description: RefEx identifier
         required: true
-quanto:
+- id: quanto
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -2676,7 +2675,7 @@ quanto:
     - maxSequenceLength
     - medianSequenceLength
     - overallNContent
-ncbigene:
+- id: ncbigene
   endpoint:
   - https://togodx.dbcls.jp/human/sparql
   - graph:
@@ -2711,7 +2710,7 @@ ncbigene:
     - type_of_gene
     - label
     - gene_description
-pubcasefinder:
+- id: pubcasefinder
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -2777,7 +2776,7 @@ pubcasefinder:
     - notification_number
     - close_match
     - see_also
-biosample:
+- id: biosample
   endpoint: http://virtuoso:8890/sparql
   title: BioSample RDF
   website: https://ddbj.nig.ac.jp/
@@ -2837,7 +2836,7 @@ biosample:
     - sra_sample
     - sra_run
     - bioproject
-reactome:
+- id: reactome
   endpoint:
   - https://rdfportal.org/ebi/sparql
   - graph:
@@ -2889,7 +2888,7 @@ reactome:
     - left_molecule_id
     - right_molecule_db
     - right_molecule_id
-ggdonto:
+- id: ggdonto
   endpoint:
   - https://rdfportal.org/primary/sparql
   - graph:
@@ -2944,7 +2943,7 @@ ggdonto:
     description: SPARQL description.
     variables:
     - Concept
-glycoepitope:
+- id: glycoepitope
   endpoint:
   - https://integbio.jp/primary/sparql
   - graph:

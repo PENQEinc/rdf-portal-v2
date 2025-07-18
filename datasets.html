@@ -9,15 +9,20 @@ title: データセット一覧
   {% for dataset in site.data.datasets %}
   <li>
     <h2>
-      <a href="/datasets/{{ dataset.id | slugify }}">
-        {% if dataset.title %}
-        {{ dataset.title }}
-        {% else %}
-        [{{ dataset.id }}]
-        {% endif %}
-      </a>
+      {% if dataset.title %}
+      {{ dataset.title }}
+      {% else %}
+      {{ dataset.id }}
+      {% endif %}
     </h2>
     <p>{{ dataset.description }}</p>
+    <ul>
+      {% if dataset.endpoint %}
+      {% for endpoint in dataset.endpoint %}
+      <li><a href="{{ endpoint }}">{{ endpoint }}</a></li>
+      {% endfor %}
+      {% endif %}
+    </ul>
   </li>
   {% endfor %}
 </ul>
