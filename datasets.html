@@ -12,17 +12,17 @@ title: データセット一覧
       {% if dataset.title %}
       {{ dataset.title }}
       {% else %}
-      {{ dataset.id }}
+      [{{ dataset.id }}]
       {% endif %}
     </h2>
     <p>{{ dataset.description }}</p>
-    <ul>
+    <!-- <ul>
       {% if dataset.endpoint %}
       {% for endpoint in dataset.endpoint %}
       <li><a href="{{ endpoint }}">{{ endpoint }}</a></li>
       {% endfor %}
       {% endif %}
-    </ul>
+    </ul> -->
   </li>
   {% endfor %}
 </ul>
